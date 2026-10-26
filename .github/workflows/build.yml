@@ -1,3 +1,4 @@
+
 name: Build Molakhassati APK
 
 on:
@@ -47,13 +48,17 @@ jobs:
         run: flutter analyze --no-fatal-infos
 
       - name: Build APK
-        run: flutter build apk --release --target-platform android-arm,android-arm64
+        run: flutter build apk --release
 
       - name: Verify APK
         run: |
           test -s build/app/outputs/flutter-apk/app-release.apk
           ls -lh build/app/outputs/flutter-apk/app-release.apk
           file build/app/outputs/flutter-apk/app-release.apk
+
+      - name: Verify APK package
+        run: |
+          $ANDROID_HOME/build-tools/$(ls "$ANDROID_HOME/build-tools" | sort -V | tail -n 1)/aapt dump badging build/app/outputs/flutter-apk/app-release.apk
 
       - name: Create release folder
         run: |
@@ -63,8 +68,8 @@ jobs:
       - name: Publish APK to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v1.0.1
-          name: ملخصاتي 1.0.1
-          body: الإصدار التجريبي الثاني من تطبيق ملخصاتي للثالث متوسط العراقي.
+          tag_name: v1.0.2
+          name: ملخصاتي 1.0.2
+          body: الإصدار التجريبي الجديد من تطبيق ملخصاتي للثالث متوسط العراقي.
           files: release/Molakhassati.apk
           fail_on_unmatched_files: true
