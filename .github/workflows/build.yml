@@ -1,70 +1,70 @@
 name: Build Molakhassati APK
 
 on:
-push:
-branches:
-- main
-workflow_dispatch:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 permissions:
-contents: write
+  contents: write
 
 jobs:
-build:
-runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-steps:
-  - name: Download project
-    uses: actions/checkout@v4
+    steps:
+      - name: Download project
+        uses: actions/checkout@v4
 
-  - name: Install Java
-    uses: actions/setup-java@v4
-    with:
-      distribution: temurin
-      java-version: '17'
+      - name: Install Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
 
-  - name: Install Flutter
-    uses: subosito/flutter-action@v2
-    with:
-      channel: stable
-      cache: true
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
 
-  - name: Check project files
-    run: |
-      test -f pubspec.yaml
-      test -f lib/main.dart
+      - name: Check project files
+        run: |
+          test -f pubspec.yaml
+          test -f lib/main.dart
 
-  - name: Generate Android files
-    run: flutter create --platforms=android --project-name molakhassati_third_intermediate .
+      - name: Generate Android files
+        run: flutter create --platforms=android --project-name molakhassati_third_intermediate .
 
-  - name: Remove default test
-    run: rm -f test/widget_test.dart
+      - name: Remove default test
+        run: rm -f test/widget_test.dart
 
-  - name: Install dependencies
-    run: flutter pub get
+      - name: Install dependencies
+        run: flutter pub get
 
-  - name: Analyze project
-    run: flutter analyze --no-fatal-infos
+      - name: Analyze project
+        run: flutter analyze --no-fatal-infos
 
-  - name: Build APK
-    run: flutter build apk --release --target-platform android-arm,android-arm64
+      - name: Build APK
+        run: flutter build apk --release --target-platform android-arm,android-arm64
 
-  - name: Verify APK
-    run: |
-      test -s build/app/outputs/flutter-apk/app-release.apk
-      ls -lh build/app/outputs/flutter-apk/app-release.apk
-      file build/app/outputs/flutter-apk/app-release.apk
+      - name: Verify APK
+        run: |
+          test -s build/app/outputs/flutter-apk/app-release.apk
+          ls -lh build/app/outputs/flutter-apk/app-release.apk
+          file build/app/outputs/flutter-apk/app-release.apk
 
-  - name: Create release folder
-    run: |
-      mkdir -p release
-      cp build/app/outputs/flutter-apk/app-release.apk release/Molakhassati.apk
+      - name: Create release folder
+        run: |
+          mkdir -p release
+          cp build/app/outputs/flutter-apk/app-release.apk release/Molakhassati.apk
 
-  - name: Publish APK to GitHub Release
-    uses: softprops/action-gh-release@v2
-    with:
-      tag_name: v1.0.1
-      name: ملخصاتي 1.0.1
-      body: الإصدار التجريبي الثاني من تطبيق ملخصاتي للثالث متوسط العراقي.
-      files: release/Molakhassati.apk
-      fail_on_unmatched_files: true
+      - name: Publish APK to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0.1
+          name: ملخصاتي 1.0.1
+          body: الإصدار التجريبي الثاني من تطبيق ملخصاتي للثالث متوسط العراقي.
+          files: release/Molakhassati.apk
+          fail_on_unmatched_files: true
