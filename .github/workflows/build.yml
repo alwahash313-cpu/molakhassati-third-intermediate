@@ -1,41 +1,44 @@
 name: Build Molakhassati APK
 
 on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
+workflow_dispatch:
+push:
+branches:
+- main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+build:
+runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+steps:
+  - name: Checkout repository
+    uses: actions/checkout@v4
 
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          channel: stable
-          cache: true
+  - name: Set up Flutter
+    uses: subosito/flutter-action@v2
+    with:
+      channel: stable
+      cache: true
 
-      - name: Check project files
-        run: |
-          test -f pubspec.yaml
-          test -f lib/main.dart
+  - name: Check project files
+    run: |
+      test -f pubspec.yaml
+      test -f lib/main.dart
 
-      - name: Install dependencies
-        run: flutter pub get
+  - name: Generate Android files
+    run: flutter create --platforms=android --project-name molakhassati_third_intermediate .
 
-      - name: Analyze project
-        run: flutter analyze
+  - name: Install dependencies
+    run: flutter pub get
 
-      - name: Build release APK
-        run: flutter build apk --release
+  - name: Analyze project
+    run: flutter analyze
 
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: molakhassati-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+  - name: Build release APK
+    run: flutter build apk --release
+
+  - name: Upload APK
+    uses: actions/upload-artifact@v4
+    with:
+      name: molakhassati-apk
+      path: build/app/outputs/flutter-apk/app-release.apk
