@@ -1,310 +1,211 @@
+const List<Chapter> chemistry = [
+  Chapter('الفصل الأول: التركيب الذري للمادة', [
+    Section('الملخص', Icons.notes, '''• تتكون الذرة من نواة (بروتونات + نيوترونات) وإلكترونات.
+• مستويات الطاقة: الإلكترونات تدور في مستويات (مدارات) حول النواة.
+• أقصى عدد للإلكترونات في المستوى = 2n² (الأول 2، الثاني 8، الثالث 18).
+• الترتيب الإلكتروني: توزيع الإلكترونات على المستويات بدءاً بالأقرب للنواة.
+• رمز لويس: رمز العنصر تحيط به نقاط تمثل إلكترونات المستوى الأخير.
+• الجدول الدوري: العناصر مرتبة تصاعدياً حسب العدد الذري، في دورات (أفقية) وزمر (عمودية).
+• عناصر الزمرة الواحدة لها عدد إلكترونات متساوٍ في المستوى الأخير.'''),
+    Section('التعاريف والتعاليل', Icons.menu_book, '''التعاريف:
+• العدد الذري: عدد البروتونات في النواة.
+• العدد الكتلي: مجموع البروتونات والنيوترونات.
+• الدورة: صف أفقي في الجدول الدوري.
+• الزمرة: عمود رأسي في الجدول الدوري.
 
-import 'package:flutter/material.dart';
+التعاليل:
+• الذرة متعادلة كهربائياً: لتساوي عدد البروتونات مع الإلكترونات.
+• تتشابه عناصر الزمرة الواحدة كيميائياً: لتساوي إلكترونات مستواها الأخير.
+• الغازات النبيلة خاملة: لأن مستواها الأخير مكتمل.'''),
+    Section('المسائل والمعادلات', Icons.calculate, '''عدد النيوترونات = العدد الكتلي − العدد الذري
 
-void main() {
-  runApp(const MolakhassatiApp());
-}
+مثال: الصوديوم (العدد الذري 11، الكتلي 23)
+النيوترونات = 23 − 11 = 12
+الترتيب الإلكتروني: 2, 8, 1
+رمز لويس: Na مع نقطة واحدة.
 
-class MolakhassatiApp extends StatelessWidget {
-  const MolakhassatiApp({super.key});
+مثال: الكلور (17): 2, 8, 7 ← رمز لويس بسبع نقاط.'''),
+    Section('أسئلة تدريبية', Icons.assignment, '''1) عرّف العدد الذري والعدد الكتلي.
+2) اكتب الترتيب الإلكتروني ورمز لويس للمغنيسيوم (12).
+3) علل: الذرة متعادلة كهربائياً.
+4) ما الفرق بين الدورة والزمرة؟'''),
+  ]),
+  Chapter('الفصل الثاني: الزمرتان الأولى والثانية (الصوديوم والكالسيوم)', [
+    Section('الملخص', Icons.notes, '''• الزمرة IA (الفلزات القلوية): Li, Na, K — في مستواها الأخير إلكترون واحد.
+• الزمرة IIA (القلوية الترابية): Mg, Ca — في مستواها الأخير إلكترونان.
+• الصوديوم: فلز لين فضي، شديد النشاط، يُحفظ تحت الكيروسين.
+• يتفاعل الصوديوم مع الماء بشدة منتجاً هيدروكسيد الصوديوم وهيدروجين.
+• الكالسيوم: فلز أقل نشاطاً من الصوديوم، يتفاعل مع الماء ببطء.
+• من مركبات الكالسيوم: كربونات الكالسيوم (الحجر الجيري، الرخام)، أوكسيد الكالسيوم (الجير الحي).'''),
+    Section('التعاريف والتعاليل', Icons.menu_book, '''التعاليل:
+• يُحفظ الصوديوم تحت الكيروسين: لمنع تفاعله مع الأوكسجين ورطوبة الهواء.
+• الصوديوم أنشط من الكالسيوم: لسهولة فقده إلكتروناً واحداً.
+• تكوّن الفلزات القلوية أيونات موجبة: لفقدها إلكترونات المستوى الأخير.
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'ملخصاتي',
-      theme: ThemeData(
-        useMaterial3: true,
-        brightness: Brightness.dark,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFFC5A66A),
-          brightness: Brightness.dark,
-        ),
-        scaffoldBackgroundColor: const Color(0xFF08090B),
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Color(0xFF101114),
-          centerTitle: true,
-        ),
-        cardTheme: CardThemeData(
-          color: const Color(0xFF151619),
-          elevation: 0,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(16),
-          ),
-        ),
-      ),
-      home: const HomePage(),
-    );
-  }
-}
+تعريف:
+• الجير الحي: أوكسيد الكالسيوم CaO.'''),
+    Section('المسائل والمعادلات', Icons.calculate, '''2Na + 2H₂O → 2NaOH + H₂↑
+Ca + 2H₂O → Ca(OH)₂ + H₂↑
+4Na + O₂ → 2Na₂O
+CaCO₃ → CaO + CO₂ (بالتسخين)
+CaO + H₂O → Ca(OH)₂'''),
+    Section('أسئلة تدريبية', Icons.assignment, '''1) علل: يُحفظ الصوديوم تحت الكيروسين.
+2) اكتب معادلة تفاعل الكالسيوم مع الماء.
+3) كيف تحصل على الجير الحي من الحجر الجيري؟'''),
+  ]),
+  Chapter('الفصل الثالث: الزمرة الثالثة (الألمنيوم ومركباته)', [
+    Section('الملخص', Icons.notes, '''• الألمنيوم (Al) عدده الذري 13، ترتيبه 2, 8, 3، من الزمرة IIIA.
+• فلز خفيف فضي، موصل جيد للحرارة والكهرباء، قابل للطرق والسحب.
+• يتكون على سطحه غشاء رقيق من أوكسيد الألمنيوم يحميه من التأكسد.
+• يُستخدم في الأواني وأسلاك الكهرباء وصناعة الطائرات.
+• أوكسيد الألمنيوم Al₂O₃ أمفوتيري (يتفاعل مع الحوامض والقواعد).'''),
+    Section('التعاريف والتعاليل', Icons.menu_book, '''• الأوكسيد الأمفوتيري: أوكسيد يتفاعل مع الحوامض والقواعد.
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+التعاليل:
+• لا يصدأ الألمنيوم بسهولة: لتكوّن طبقة Al₂O₃ تحميه.
+• يُستخدم في الطائرات: لخفة وزنه ومتانته.
+• يُستخدم في الأسلاك الكهربائية: لجودة توصيله للكهرباء.'''),
+    Section('المسائل والمعادلات', Icons.calculate, '''4Al + 3O₂ → 2Al₂O₃
+2Al + 6HCl → 2AlCl₃ + 3H₂↑
+Al₂O₃ + 6HCl → 2AlCl₃ + 3H₂O
+Al₂O₃ + 2NaOH → 2NaAlO₂ + H₂O'''),
+    Section('أسئلة تدريبية', Icons.assignment, '''1) علل: لا يتأثر الألمنيوم بسهولة بالهواء.
+2) ما معنى أن Al₂O₃ أمفوتيري؟ مثّل بمعادلتين.
+3) اذكر ثلاثة استخدامات للألمنيوم.'''),
+  ]),
+  Chapter('الفصل الرابع: المحاليل والتركيز', [
+    Section('الملخص', Icons.notes, '''• المحلول: مزيج متجانس من مذاب ومذيب.
+• المذيب: المادة الأكثر كمية (غالباً الماء)، والمذاب: الأقل.
+• قابلية الذوبان: أقصى كمية من المذاب تذوب في كمية معينة من المذيب عند درجة حرارة معينة.
+• المحلول المشبع: لا يذيب المزيد من المذاب عند درجة حرارته.
+• غير المشبع: يستطيع إذابة المزيد.
+• تزداد قابلية ذوبان أغلب الأملاح الصلبة بارتفاع الحرارة.
+• التركيز: كمية المذاب في كمية معينة من المحلول.'''),
+    Section('التعاريف والتعاليل', Icons.menu_book, '''• المحلول المشبع: محلول وصل أقصى ما يذيبه المذيب من المذاب.
+• قابلية الذوبان: كمية المذاب اللازمة لتشبيع كمية معينة من المذيب.
 
-  static const subjects = [
-    'الإسلامية',
-    'اللغة العربية',
-    'اللغة الإنكليزية',
-    'الرياضيات',
-    'العلوم',
-    'الكيمياء',
-    'الفيزياء',
-    'الاجتماعيات',
-  ];
+التعاليل:
+• يُحرَّك المحلول عند إذابة السكر: لزيادة سرعة الذوبان.
+• يذوب السكر في الماء الساخن أسرع: لزيادة حركة الجزيئات.'''),
+    Section('المسائل والمعادلات', Icons.calculate, '''النسبة المئوية الكتلية = (كتلة المذاب ÷ كتلة المحلول) × 100
+كتلة المحلول = كتلة المذاب + كتلة المذيب
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'ملخصاتي',
-          style: TextStyle(fontWeight: FontWeight.bold),
-        ),
-      ),
-      body: ListView(
-        padding: const EdgeInsets.all(16),
-        children: [
-          const Text(
-            'الصف الثالث المتوسط',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 22,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          const SizedBox(height: 8),
-          const Text(
-            'ملخصاتك الدراسية بمكان واحد',
-            textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.white60),
-          ),
-          const SizedBox(height: 24),
-          Card(
-            child: ListTile(
-              leading: const Icon(
-                Icons.lock_outline,
-                color: Color(0xFFC5A66A),
-              ),
-              title: const Text('خصوصيتك مهمة'),
-              subtitle: const Text(
-                'استخدم التطبيق لمراجعة دروسك وتنظيم دراستك.',
-              ),
-            ),
-          ),
-          const SizedBox(height: 16),
-          ...subjects.map(
-            (subject) => Card(
-              child: ListTile(
-                leading: const Icon(
-                  Icons.menu_book_rounded,
-                  color: Color(0xFFC5A66A),
-                ),
-                title: Text(subject),
-                trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-                onTap: () {
-                  if (subject == 'الكيمياء') {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (_) => const ChemistryPage(),
-                      ),
-                    );
-                  } else if (subject == 'الاجتماعيات') {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (_) => const SocialStudiesPage(),
-                      ),
-                    );
-                  } else {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (_) => SubjectPage(subject: subject),
-                      ),
-                    );
-                  }
-                },
-              ),
-            ),
-          ),
-          const SizedBox(height: 16),
-          const Center(
-            child: Text(
-              'ملخصاتي | الثالث المتوسط',
-              style: TextStyle(color: Colors.white38),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
+مثال: 10 غم ملح في 90 غم ماء
+كتلة المحلول = 100 غم
+النسبة = (10 ÷ 100) × 100 = 10%
 
-class SubjectPage extends StatelessWidget {
-  final String subject;
+التركيز المولاري (م) = عدد المولات ÷ الحجم باللتر
+(تأكد من الصيغة التي يعتمدها كتابك)'''),
+    Section('أسئلة تدريبية', Icons.assignment, '''1) عرّف المحلول المشبع.
+2) أذيب 20 غم سكر في 80 غم ماء، احسب النسبة المئوية الكتلية.
+3) علل: يذوب السكر في الماء الساخن أسرع.'''),
+  ]),
+  Chapter('الفصل الخامس: الزمرة الرابعة (السليكون ومركباته)', [
+    Section('الملخص', Icons.notes, '''• السليكون (Si) عدده الذري 14، ترتيبه 2, 8, 4، من الزمرة IVA.
+• شبه فلز، يأتي بعد الأوكسجين في وفرته في القشرة الأرضية.
+• يوجد في الرمل والصخور على هيئة ثنائي أوكسيد السليكون SiO₂.
+• شبه موصل، ويُستخدم في الرقائق الإلكترونية والخلايا الشمسية.
+• يدخل ثنائي أوكسيد السليكون في صناعة الزجاج.'''),
+    Section('التعاريف والتعاليل', Icons.menu_book, '''• شبه الفلز: عنصر خواصه بين الفلزات واللافلزات.
+• شبه الموصل: مادة توصيلها للكهرباء بين الموصل والعازل.
 
-  const SubjectPage({super.key, required this.subject});
+التعاليل:
+• يُستخدم السليكون في الصناعات الإلكترونية: لأنه شبه موصل.
+• لا يوجد السليكون حراً في الطبيعة: لنشاطه الكيميائي واتحاده مع الأوكسجين.'''),
+    Section('المسائل والمعادلات', Icons.calculate, '''Si + O₂ → SiO₂ (بالتسخين)
+SiO₂ + 2NaOH → Na₂SiO₃ + H₂O (بالتسخين)
+SiO₂ + 2C → Si + 2CO (بدرجة حرارة عالية)'''),
+    Section('أسئلة تدريبية', Icons.assignment, '''1) ما سبب استخدام السليكون في الإلكترونيات؟
+2) اكتب الترتيب الإلكتروني للسليكون.
+3) أين يوجد السليكون في الطبيعة؟'''),
+  ]),
+  Chapter('الفصل السادس: مدخل في الكيمياء العضوية', [
+    Section('الملخص', Icons.notes, '''• الكيمياء العضوية: دراسة مركبات الكربون (ما عدا CO, CO₂ والكربونات).
+• الهيدروكربونات: مركبات تتكون من الكربون والهيدروجين فقط.
+• الميثان CH₄: ألكان، رابطة أحادية، غاز الغاز الطبيعي.
+• الإيثيلين C₂H₄: ألكين، فيه رابطة ثنائية.
+• الأستيلين C₂H₂: ألكاين، فيه رابطة ثلاثية، يُستخدم في لحام المعادن.
+• الكربون رباعي التكافؤ.'''),
+    Section('التعاريف والتعاليل', Icons.menu_book, '''• الهيدروكربون: مركب يتكون من الكربون والهيدروجين فقط.
+• المركب المشبع: يحتوي روابط أحادية فقط.
+• المركب غير المشبع: يحتوي رابطة ثنائية أو ثلاثية.
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(subject)),
-      body: const Center(
-        child: Padding(
-          padding: EdgeInsets.all(24),
-          child: Text(
-            'سيُضاف محتوى هذه المادة بعد ترتيب الملخصات ومراجعتها.',
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 17),
-          ),
-        ),
-      ),
-    );
-  }
-}
+التعاليل:
+• الإيثيلين والأستيلين أنشط من الميثان: لوجود روابط متعددة.
+• يتفاعل الإيثيلين بالإضافة: لأنه غير مشبع.'''),
+    Section('المسائل والمعادلات', Icons.calculate, '''احتراق الميثان:
+CH₄ + 2O₂ → CO₂ + 2H₂O
 
-class ChemistryPage extends StatelessWidget {
-  const ChemistryPage({super.key});
+احتراق الإيثيلين:
+C₂H₄ + 3O₂ → 2CO₂ + 2H₂O
 
-  static const chapters = [
-    'الفصل الأول',
-    'الفصل الثاني',
-    'الفصل الثالث',
-    'الفصل الرابع',
-    'الفصل الخامس',
-    'الفصل السادس',
-    'الفصل السابع',
-    'الفصل الثامن',
-    'الفصل التاسع',
-  ];
+إضافة الهيدروجين للإيثيلين:
+C₂H₄ + H₂ → C₂H₆
 
-  static const sections = [
-    'الملخص',
-    'التعاريف والتعاليل',
-    'المسائل والمعادلات',
-    'الأسئلة الوزارية',
-  ];
+الصيغ العامة: ألكان CₙH₂ₙ₊₂ ، ألكين CₙH₂ₙ ، ألكاين CₙH₂ₙ₋₂'''),
+    Section('أسئلة تدريبية', Icons.assignment, '''1) ما الفرق بين المركب المشبع وغير المشبع؟
+2) اكتب معادلة احتراق الميثان.
+3) علل: يتفاعل الإيثيلين بالإضافة.
+4) اذكر استخداماً للأستيلين.'''),
+  ]),
+  Chapter('الفصل السابع: الزمرة الخامسة (النتروجين والفسفور)', [
+    Section('الملخص', Icons.notes, '''• النتروجين (N) عدده الذري 7، ترتيبه 2, 5، يشكل نحو 78% من الهواء.
+• غاز خامل نسبياً، عديم اللون والرائحة.
+• يُحضَّر الأمونيا NH₃ صناعياً بطريقة هابر.
+• الفسفور (P) عدده الذري 15، ترتيبه 2, 8, 5، ومنه الأحمر والأبيض.
+• الفسفور الأبيض شديد النشاط ويُحفظ تحت الماء.
+• الأسمدة النتروجينية والفوسفاتية مهمة لنمو النبات.'''),
+    Section('التعاريف والتعاليل', Icons.menu_book, '''التعاليل:
+• النتروجين قليل النشاط في الظروف العادية: لقوة الرابطة الثلاثية بين ذرتيه.
+• يُحفظ الفسفور الأبيض تحت الماء: لمنع اشتعاله تلقائياً بالهواء.
+• تُضاف الأسمدة للتربة: لتعويض العناصر التي يمتصها النبات.'''),
+    Section('المسائل والمعادلات', Icons.calculate, '''N₂ + 3H₂ ⇌ 2NH₃ (طريقة هابر)
+4P + 5O₂ → 2P₂O₅
+NH₃ + HCl → NH₄Cl
+N₂ + O₂ → 2NO (بالشرارة الكهربائية)'''),
+    Section('أسئلة تدريبية', Icons.assignment, '''1) علل: يُحفظ الفسفور الأبيض تحت الماء.
+2) اكتب معادلة تحضير الأمونيا.
+3) اذكر أهمية الأسمدة النتروجينية.'''),
+  ]),
+  Chapter('الفصل الثامن: الزمرة السادسة (الكبريت وحمض الكبريتيك)', [
+    Section('الملخص', Icons.notes, '''• الكبريت (S) عدده الذري 16، ترتيبه 2, 8, 6، لافلز أصفر صلب.
+• لا يذوب في الماء ويذوب في ثنائي كبريتيد الكربون.
+• يحترق بلهب أزرق منتجاً غاز ثنائي أوكسيد الكبريت SO₂.
+• حمض الكبريتيك H₂SO₄: سائل زيتي ثقيل، يُسمى "ملك الكيمياويات".
+• يُستخدم في البطاريات والأسمدة والمنظفات.
+• المركز منه شديد النهم للماء.'''),
+    Section('التعاريف والتعاليل', Icons.menu_book, '''التعاليل:
+• يُخفَّف الحمض بإضافة الحمض إلى الماء ببطء وليس العكس: لأن التفاعل يولّد حرارة عالية قد تسبب تطاير الحمض.
+• يُسمى حمض الكبريتيك المركز عاملاً نازعاً للماء: لشدة ميله للماء.
+• يسبب SO₂ المطر الحامضي: لتحوله إلى أحماض عند ذوبانه في ماء المطر.'''),
+    Section('المسائل والمعادلات', Icons.calculate, '''S + O₂ → SO₂
+2SO₂ + O₂ ⇌ 2SO₃ (بوجود عامل مساعد)
+SO₃ + H₂O → H₂SO₄
+Zn + H₂SO₄ → ZnSO₄ + H₂↑
+H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O'''),
+    Section('أسئلة تدريبية', Icons.assignment, '''1) علل: يُضاف الحمض إلى الماء وليس العكس.
+2) اكتب معادلات تحضير حمض الكبريتيك من الكبريت (خطوات).
+3) اذكر ثلاثة استخدامات لحمض الكبريتيك.'''),
+  ]),
+  Chapter('الفصل التاسع: الزمرة السابعة (الكلور وكلوريد الهيدروجين)', [
+    Section('الملخص', Icons.notes, '''• الكلور (Cl) عدده الذري 17، ترتيبه 2, 8, 7، من الهالوجينات.
+• غاز أصفر مخضر، سام، رائحته خانقة.
+• يُستخدم في تعقيم مياه الشرب وتبييض الأقمشة.
+• كلوريد الهيدروجين HCl غاز عديم اللون يذوب في الماء ليكوّن حمض الهيدروكلوريك.
+• يُحضَّر مختبرياً من تفاعل ملح الطعام مع حمض الكبريتيك المركز.'''),
+    Section('التعاريف والتعاليل', Icons.menu_book, '''• الهالوجينات: عناصر الزمرة VIIA (F, Cl, Br, I).
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('الكيمياء')),
-      body: ListView(
-        padding: const EdgeInsets.all(12),
-        children: [
-          const Card(
-            child: Padding(
-              padding: EdgeInsets.all(16),
-              child: Column(
-                children: [
-                  Icon(
-                    Icons.science_outlined,
-                    size: 42,
-                    color: Color(0xFFC5A66A),
-                  ),
-                  SizedBox(height: 10),
-                  Text(
-                    'كيمياء الثالث المتوسط',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  SizedBox(height: 6),
-                  Text(
-                    'اختر الفصل للوصول إلى أقسام المراجعة.',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.white60),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          const SizedBox(height: 8),
-          ...chapters.asMap().entries.map((entry) {
-            final index = entry.key;
-            final chapter = entry.value;
-
-            return Card(
-              child: ExpansionTile(
-                key: PageStorageKey<String>(chapter),
-                leading: CircleAvatar(
-                  backgroundColor: const Color(0xFFC5A66A),
-                  foregroundColor: Colors.black,
-                  child: Text('${index + 1}'),
-                ),
-                title: Text(
-                  chapter,
-                  style: const TextStyle(fontWeight: FontWeight.w600),
-                ),
-                children: sections.map((section) {
-                  return ListTile(
-                    leading: const Icon(
-                      Icons.article_outlined,
-                      color: Color(0xFFC5A66A),
-                    ),
-                    title: Text(section),
-                    subtitle: const Text(
-                      'سيُضاف المحتوى بعد مطابقته مع الكتاب المدرسي.',
-                    ),
-                    onTap: () {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text(
-                            '$chapter - $section: المحتوى قيد الإعداد.',
-                          ),
-                        ),
-                      );
-                    },
-                  );
-                }).toList(),
-              ),
-            );
-          }),
-          const SizedBox(height: 12),
-          const Padding(
-            padding: EdgeInsets.all(12),
-            child: Text(
-              'ملاحظة: أسماء الفصول هنا مؤقتة. يجب مطابقتها مع فهرس كتاب الكيمياء العراقي قبل إضافة الملخصات النهائية.',
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.white54),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class SocialStudiesPage extends StatelessWidget {
-  const SocialStudiesPage({super.key});
-
-  static const sections = [
-    'التاريخ',
-    'الجغرافية',
-    'التربية الوطنية',
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('الاجتماعيات')),
-      body: ListView(
-        padding: const EdgeInsets.all(12),
-        children: sections.map((section) {
-          return Card(
-            child: ListTile(
-              leading: const Icon(
-                Icons.public,
-                color: Color(0xFFC5A66A),
-              ),
-              title: Text(section),
-              subtitle: const Text('سيُضاف المحتوى الدراسي لاحقاً.'),
-            ),
-          );
-        }).toList(),
-      ),
-    );
-  }
-}
+التعاليل:
+• الكلور شديد النشاط: لأنه يحتاج إلكتروناً واحداً ليكمل مستواه الأخير.
+• يُستخدم الكلور في تعقيم المياه: لقدرته على قتل الجراثيم.
+• يذوب HCl في الماء بسهولة: لأنه مركب قطبي.'''),
+    Section('المسائل والمعادلات', Icons.calculate, '''NaCl + H₂SO₄ (مركز) → NaHSO₄ + HCl↑
+H₂ + Cl₂ → 2HCl
+2Na + Cl₂ → 2NaCl
+Zn + 2HCl → ZnCl₂ + H₂↑
+HCl + NaOH → NaCl + H₂O'''),
+    Section('أسئلة تدريبية', Icons.assignment, '''1) اكتب معادلة تحضير HCl مختبرياً.
+2) علل: الكلور شديد النشاط.
+3) اذكر استخدامين للكلور.'''),
+  ]),
+];
