@@ -1,13 +1,9 @@
+
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MolakhassatiApp());
 }
-
-const Color pageColor = Color(0xFF11151A);
-const Color cardColor = Color(0xFF20262E);
-const Color goldColor = Color(0xFFC8A875);
-const Color mutedColor = Color(0xFFAEB6C1);
 
 class MolakhassatiApp extends StatelessWidget {
   const MolakhassatiApp({super.key});
@@ -16,14 +12,25 @@ class MolakhassatiApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'ملخصاتي - الثالث متوسط العراقي',
+      title: 'ملخصاتي',
       theme: ThemeData(
         useMaterial3: true,
-        scaffoldBackgroundColor: pageColor,
+        brightness: Brightness.dark,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: goldColor,
+          seedColor: const Color(0xFFC5A66A),
           brightness: Brightness.dark,
-          surface: cardColor,
+        ),
+        scaffoldBackgroundColor: const Color(0xFF08090B),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFF101114),
+          centerTitle: true,
+        ),
+        cardTheme: CardThemeData(
+          color: const Color(0xFF151619),
+          elevation: 0,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
         ),
       ),
       home: const HomePage(),
@@ -31,164 +38,125 @@ class MolakhassatiApp extends StatelessWidget {
   }
 }
 
-class Subject {
-  final String name;
-  final IconData icon;
-
-  const Subject(this.name, this.icon);
-}
-
-const List<Subject> subjects = [
-  Subject('اللغة العربية', Icons.menu_book_outlined),
-  Subject('اللغة الإنكليزية', Icons.translate_outlined),
-  Subject('الرياضيات', Icons.calculate_outlined),
-  Subject('الفيزياء', Icons.bubble_chart_outlined),
-  Subject('الكيمياء', Icons.science_outlined),
-  Subject('الاجتماعيات', Icons.groups_outlined),
-  Subject('الأحياء', Icons.spa_outlined),
-  Subject('الإسلامية', Icons.mosque_outlined),
-];
-
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
+  static const subjects = [
+    'الإسلامية',
+    'اللغة العربية',
+    'اللغة الإنكليزية',
+    'الرياضيات',
+    'العلوم',
+    'الكيمياء',
+    'الفيزياء',
+    'الاجتماعيات',
+  ];
+
   @override
   Widget build(BuildContext context) {
-    return Directionality(
-      textDirection: TextDirection.rtl,
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text(
-            'ملخصاتي',
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          'ملخصاتي',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+      ),
+      body: ListView(
+        padding: const EdgeInsets.all(16),
+        children: [
+          const Text(
+            'الصف الثالث المتوسط',
+            textAlign: TextAlign.center,
             style: TextStyle(
-              fontSize: 24,
+              fontSize: 22,
               fontWeight: FontWeight.bold,
             ),
           ),
-          backgroundColor: pageColor,
-          foregroundColor: Colors.white,
-        ),
-        body: SafeArea(
-          child: ListView(
-            padding: const EdgeInsets.all(16),
-            children: [
-              Container(
-                padding: const EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(22),
-                  gradient: const LinearGradient(
-                    colors: [
-                      Color(0xFF303740),
-                      Color(0xFF1C2229),
-                    ],
-                  ),
-                  border: Border.all(color: Colors.white10),
-                ),
-                child: const Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Icon(
-                      Icons.school_outlined,
-                      size: 42,
-                      color: goldColor,
-                    ),
-                    SizedBox(height: 12),
-                    Text(
-                      'الثالث متوسط العراقي',
-                      style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    SizedBox(height: 8),
-                    Text(
-                      'ملخصات ومراجعة المواد الدراسية',
-                      style: TextStyle(color: mutedColor),
-                    ),
-                  ],
-                ),
+          const SizedBox(height: 8),
+          const Text(
+            'ملخصاتك الدراسية بمكان واحد',
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.white60),
+          ),
+          const SizedBox(height: 24),
+          Card(
+            child: ListTile(
+              leading: const Icon(
+                Icons.lock_outline,
+                color: Color(0xFFC5A66A),
               ),
-              const SizedBox(height: 24),
-              const Text(
-                'المواد الدراسية',
-                style: TextStyle(
-                  fontSize: 21,
-                  fontWeight: FontWeight.bold,
-                ),
+              title: const Text('خصوصيتك مهمة'),
+              subtitle: const Text(
+                'استخدم التطبيق لمراجعة دروسك وتنظيم دراستك.',
               ),
-              const SizedBox(height: 14),
-              GridView.builder(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                itemCount: subjects.length,
-                gridDelegate:
-                    const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
-                  crossAxisSpacing: 12,
-                  mainAxisSpacing: 12,
-                  childAspectRatio: 1.25,
+            ),
+          ),
+          const SizedBox(height: 16),
+          ...subjects.map(
+            (subject) => Card(
+              child: ListTile(
+                leading: const Icon(
+                  Icons.menu_book_rounded,
+                  color: Color(0xFFC5A66A),
                 ),
-                itemBuilder: (context, index) {
-                  final subject = subjects[index];
-
-                  return Card(
-                    color: cardColor,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18),
-                    ),
-                    child: InkWell(
-                      borderRadius: BorderRadius.circular(18),
-                      onTap: () {
-                        if (subject.name == 'الكيمياء') {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) => const ChemistryPage(),
-                            ),
-                          );
-                        } else if (subject.name == 'الاجتماعيات') {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) => const SocialStudiesPage(),
-                            ),
-                          );
-                        } else {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(
-                              content: Text(
-                                'قسم ${subject.name} قيد التجهيز',
-                              ),
-                            ),
-                          );
-                        }
-                      },
-                      child: Padding(
-                        padding: const EdgeInsets.all(12),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(
-                              subject.icon,
-                              size: 32,
-                              color: goldColor,
-                            ),
-                            const SizedBox(height: 10),
-                            Text(
-                              subject.name,
-                              textAlign: TextAlign.center,
-                              style: const TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
-                        ),
+                title: Text(subject),
+                trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                onTap: () {
+                  if (subject == 'الكيمياء') {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const ChemistryPage(),
                       ),
-                    ),
-                  );
+                    );
+                  } else if (subject == 'الاجتماعيات') {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const SocialStudiesPage(),
+                      ),
+                    );
+                  } else {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => SubjectPage(subject: subject),
+                      ),
+                    );
+                  }
                 },
               ),
-            ],
+            ),
+          ),
+          const SizedBox(height: 16),
+          const Center(
+            child: Text(
+              'ملخصاتي | الثالث المتوسط',
+              style: TextStyle(color: Colors.white38),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class SubjectPage extends StatelessWidget {
+  final String subject;
+
+  const SubjectPage({super.key, required this.subject});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text(subject)),
+      body: const Center(
+        child: Padding(
+          padding: EdgeInsets.all(24),
+          child: Text(
+            'سيُضاف محتوى هذه المادة بعد ترتيب الملخصات ومراجعتها.',
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 17),
           ),
         ),
       ),
@@ -206,91 +174,104 @@ class ChemistryPage extends StatelessWidget {
     'الفصل الرابع',
     'الفصل الخامس',
     'الفصل السادس',
+    'الفصل السابع',
+    'الفصل الثامن',
+    'الفصل التاسع',
+  ];
+
+  static const sections = [
+    'الملخص',
+    'التعاريف والتعاليل',
+    'المسائل والمعادلات',
+    'الأسئلة الوزارية',
   ];
 
   @override
   Widget build(BuildContext context) {
-    return Directionality(
-      textDirection: TextDirection.rtl,
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text('الكيمياء'),
-          backgroundColor: pageColor,
-          foregroundColor: Colors.white,
-        ),
-        body: ListView(
-          padding: const EdgeInsets.all(16),
-          children: [
-            Container(
-              padding: const EdgeInsets.all(18),
-              decoration: BoxDecoration(
-                color: cardColor,
-                borderRadius: BorderRadius.circular(18),
-                border: Border.all(color: goldColor),
-              ),
-              child: const Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+    return Scaffold(
+      appBar: AppBar(title: const Text('الكيمياء')),
+      body: ListView(
+        padding: const EdgeInsets.all(12),
+        children: [
+          const Card(
+            child: Padding(
+              padding: EdgeInsets.all(16),
+              child: Column(
                 children: [
+                  Icon(
+                    Icons.science_outlined,
+                    size: 42,
+                    color: Color(0xFFC5A66A),
+                  ),
+                  SizedBox(height: 10),
                   Text(
-                    'كيمياء الثالث متوسط',
+                    'كيمياء الثالث المتوسط',
                     style: TextStyle(
-                      fontSize: 22,
+                      fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(height: 8),
+                  SizedBox(height: 6),
                   Text(
-                    'ملخصات وتعريفات وتعاليل ومسائل وأسئلة وزارية',
-                    style: TextStyle(color: mutedColor),
+                    'اختر الفصل للوصول إلى أقسام المراجعة.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(color: Colors.white60),
                   ),
                 ],
               ),
             ),
-            const SizedBox(height: 16),
-            ...chapters.asMap().entries.map((entry) {
-              return Card(
-                color: cardColor,
-                child: ExpansionTile(
-                  leading: CircleAvatar(
-                    backgroundColor: const Color(0xFF39414B),
-                    foregroundColor: goldColor,
-                    child: Text('${entry.key + 1}'),
-                  ),
-                  title: Text(entry.value),
-                  children: const [
-                    ListTile(
-                      leading: Icon(Icons.notes, color: goldColor),
-                      title: Text('الملخص'),
-                      subtitle: Text('يُضاف ملخص الفصل بعد مراجعة الكتاب.'),
-                    ),
-                    ListTile(
-                      leading: Icon(Icons.menu_book, color: goldColor),
-                      title: Text('التعاريف والتعاليل'),
-                      subtitle: Text('قسم للتعاريف والأسباب المهمة.'),
-                    ),
-                    ListTile(
-                      leading: Icon(Icons.calculate, color: goldColor),
-                      title: Text('المسائل والمعادلات'),
-                      subtitle: Text('أمثلة وخطوات الحل حسب المنهج.'),
-                    ),
-                    ListTile(
-                      leading: Icon(Icons.assignment, color: goldColor),
-                      title: Text('الأسئلة الوزارية'),
-                      subtitle: Text(
-                        'تُضاف الأسئلة السابقة بعد التحقق من مصادرها.',
-                      ),
-                    ),
-                  ],
+          ),
+          const SizedBox(height: 8),
+          ...chapters.asMap().entries.map((entry) {
+            final index = entry.key;
+            final chapter = entry.value;
+
+            return Card(
+              child: ExpansionTile(
+                key: PageStorageKey<String>(chapter),
+                leading: CircleAvatar(
+                  backgroundColor: const Color(0xFFC5A66A),
+                  foregroundColor: Colors.black,
+                  child: Text('${index + 1}'),
                 ),
-              );
-            }),
-            const SizedBox(height: 12),
-            const Text(
-              'ملاحظة: أسماء الفصول مؤقتة إلى أن نطابقها مع فهرس الكتاب العراقي المعتمد.',
-              style: TextStyle(color: mutedColor),
+                title: Text(
+                  chapter,
+                  style: const TextStyle(fontWeight: FontWeight.w600),
+                ),
+                children: sections.map((section) {
+                  return ListTile(
+                    leading: const Icon(
+                      Icons.article_outlined,
+                      color: Color(0xFFC5A66A),
+                    ),
+                    title: Text(section),
+                    subtitle: const Text(
+                      'سيُضاف المحتوى بعد مطابقته مع الكتاب المدرسي.',
+                    ),
+                    onTap: () {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text(
+                            '$chapter - $section: المحتوى قيد الإعداد.',
+                          ),
+                        ),
+                      );
+                    },
+                  );
+                }).toList(),
+              ),
+            );
+          }),
+          const SizedBox(height: 12),
+          const Padding(
+            padding: EdgeInsets.all(12),
+            child: Text(
+              'ملاحظة: أسماء الفصول هنا مؤقتة. يجب مطابقتها مع فهرس كتاب الكيمياء العراقي قبل إضافة الملخصات النهائية.',
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.white54),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
@@ -299,53 +280,30 @@ class ChemistryPage extends StatelessWidget {
 class SocialStudiesPage extends StatelessWidget {
   const SocialStudiesPage({super.key});
 
+  static const sections = [
+    'التاريخ',
+    'الجغرافية',
+    'التربية الوطنية',
+  ];
+
   @override
   Widget build(BuildContext context) {
-    const sections = [
-      ('التاريخ', Icons.account_balance),
-      ('الوطنية', Icons.flag),
-      ('الجغرافية', Icons.public),
-    ];
-
-    return Directionality(
-      textDirection: TextDirection.rtl,
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text('الاجتماعيات'),
-          backgroundColor: pageColor,
-          foregroundColor: Colors.white,
-        ),
-        body: ListView(
-          padding: const EdgeInsets.all(16),
-          children: [
-            const Text(
-              'ملف الاجتماعيات',
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
+    return Scaffold(
+      appBar: AppBar(title: const Text('الاجتماعيات')),
+      body: ListView(
+        padding: const EdgeInsets.all(12),
+        children: sections.map((section) {
+          return Card(
+            child: ListTile(
+              leading: const Icon(
+                Icons.public,
+                color: Color(0xFFC5A66A),
               ),
+              title: Text(section),
+              subtitle: const Text('سيُضاف المحتوى الدراسي لاحقاً.'),
             ),
-            const SizedBox(height: 8),
-            const Text(
-              'التاريخ والوطنية والجغرافية في مكان واحد.',
-              style: TextStyle(color: mutedColor),
-            ),
-            const SizedBox(height: 16),
-            ...sections.map((section) {
-              return Card(
-                color: cardColor,
-                child: ListTile(
-                  leading: Icon(section.$2, color: goldColor, size: 30),
-                  title: Text(
-                    section.$1,
-                    style: const TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  subtitle: const Text('ملخصات ومراجعة'),
-                ),
-              );
-            }),
-          ],
-        ),
+          );
+        }).toList(),
       ),
     );
   }
