@@ -28,6 +28,9 @@ jobs:
       - name: Generate Android files
         run: flutter create --platforms=android --project-name molakhassati_third_intermediate .
 
+      - name: Remove default test
+        run: rm -f test/widget_test.dart
+
       - run: flutter pub get
       - run: flutter analyze --no-fatal-infos
       - run: flutter build apk --release
