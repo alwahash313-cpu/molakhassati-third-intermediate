@@ -66,8 +66,8 @@ jobs:
       - name: Publish APK to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v1.0.3
-          name: ملخصاتي 1.0.3
+          tag_name: v1.0.4
+          name:  ملخصاتي 1.0.4
           body: الإصدار التجريبي الجديد من تطبيق ملخصاتي للثالث متوسط العراقي.
           files: release/Molakhassati.apk
           fail_on_unmatched_files: true
