@@ -1,1 +1,11 @@
 
+
+name: Make Keystore
+on: workflow_dispatch
+jobs:
+  key:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          keytool -genkey -keystore k.jks -keyalg RSA -keysize 2048 -validity 10000 -alias molakhassati -storepass alwahash313 -keypass alwahash313 -dname "CN=Molakhassati, O=Molakhassati, C=IQ"
+          base64 -w0 k.jks
