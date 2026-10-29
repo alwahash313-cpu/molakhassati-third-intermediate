@@ -80,8 +80,8 @@ jobs:
       - name: Publish APK to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v1.0.5
-          name: ملخصاتي 1.0.5
+          tag_name: v1.0.6
+          name: ملخصاتي 1.0.6
           body: نسخة موقّعة بمفتاح ثابت، تتحدث فوق النسخة السابقة.
           files: release/Molakhassati.apk
           fail_on_unmatched_files: true
