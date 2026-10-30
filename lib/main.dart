@@ -1,4 +1,8 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+
+import 'bio_images.dart';
 
 void main() {
   runApp(const MolakhassatiApp());
@@ -3654,6 +3658,55 @@ const List<Chapter> biology = [
   ]),
 ];
 
+class Figure {
+  final String key;
+  final String caption;
+  const Figure(this.key, this.caption);
+}
+
+const Map<int, List<Figure>> biologyFigures = {
+  0: [
+    Figure('neuron', 'شكل (1-1): خلية عصبية نموذجية'),
+  ],
+  1: [
+    Figure('bone_micro', 'شكل (2-2): مقطع عرضي مكبر لنسيج العظم'),
+    Figure('bone_outer', 'شكل (3-2): المظهر الخارجي للعظم'),
+    Figure('tooth', 'شكل (5-2): تركيب السن'),
+    Figure('vertebra', 'شكل (6-2): تركيب الفقرة'),
+  ],
+  2: [
+    Figure('muscles', 'شكل (1-3): أنواع العضلات في جسم الإنسان'),
+  ],
+  3: [
+    Figure('digestive', 'شكل (1-4): تركيب الجهاز الهضمي في الإنسان'),
+    Figure('large_intestine', 'شكل (2-4): الأمعاء الغليظة للإنسان'),
+    Figure('liver', 'شكل (4-4): كبد الإنسان'),
+    Figure('villus', 'شكل (5-4): مقطع في الأمعاء الدقيقة وتركيب الزغابة'),
+  ],
+  4: [
+    Figure('blood_comp', 'شكل (2-5): مكونات الدم'),
+    Figure('blood_table', 'جدول: تصنيف فصائل الدم وفقاً لقابلية المنح والتلقي'),
+  ],
+  6: [
+    Figure('kidney', 'شكل (1-7): مقطع طولي في الكلية'),
+    Figure('urinary', 'شكل (2-7): تركيب الجهاز البولي في الإنسان'),
+    Figure('nail', 'شكل (5-7): تركيب الظفر (ب: التشريح الداخلي)'),
+  ],
+  7: [
+    Figure('egg_sperm', 'شكل (4-8): بيضة ونطفة الإنسان'),
+  ],
+  8: [
+    Figure('taste', 'شكل (3-9): براعم التذوق ومواقعها في اللسان'),
+  ],
+  9: [
+    Figure('thyroid', 'شكل (3-10): تركيب الغدة الدرقية'),
+    Figure('pancreas', 'شكل (6-10): تركيب البنكرياس'),
+  ],
+  10: [
+    Figure('virus', 'شكل (2-11): تركيب الراشح (الفيروس)'),
+  ],
+};
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -3945,7 +3998,8 @@ class BiologyPage extends StatelessWidget {
                 ),
                 title: Text(chapter.title,
                     style: const TextStyle(fontWeight: FontWeight.w600)),
-                children: chapter.sections.map((section) {
+                children: [
+                  ...chapter.sections.map((section) {
                   return ListTile(
                     leading: Icon(section.icon, color: gold),
                     title: Text(section.title),
@@ -3963,7 +4017,29 @@ class BiologyPage extends StatelessWidget {
                       );
                     },
                   );
-                }).toList(),
+                }),
+                  if (biologyFigures.containsKey(entry.key))
+                    ListTile(
+                      leading:
+                          const Icon(Icons.image_outlined, color: gold),
+                      title: const Text('الرسومات المهمة'),
+                      subtitle: Text(
+                          '${biologyFigures[entry.key]!.length} رسم للحفظ'),
+                      trailing:
+                          const Icon(Icons.arrow_forward_ios, size: 14),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => FiguresPage(
+                              chapter: chapter.title,
+                              figures: biologyFigures[entry.key]!,
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                ],
               ),
             );
           }),
@@ -4032,6 +4108,108 @@ class SocialStudiesPage extends StatelessWidget {
             ),
           );
         }).toList(),
+      ),
+    );
+  }
+}
+
+class FiguresPage extends StatelessWidget {
+  final String chapter;
+  final List<Figure> figures;
+  const FiguresPage({super.key, required this.chapter, required this.figures});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('الرسومات المهمة')),
+      body: ListView(
+        padding: const EdgeInsets.all(16),
+        children: [
+          Text(chapter,
+              style: const TextStyle(
+                  color: gold, fontSize: 16, fontWeight: FontWeight.bold)),
+          const SizedBox(height: 8),
+          const Text('اضغط على الرسم لتكبيره.',
+              style: TextStyle(color: Colors.white54)),
+          const SizedBox(height: 12),
+          ...figures.map((f) {
+            return Card(
+              child: Padding(
+                padding: const EdgeInsets.all(12),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Text(f.caption,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
+                    const SizedBox(height: 10),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => FullImagePage(figure: f),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        color: Colors.white,
+                        child: FigureImage(figureKey: f.key),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            );
+          }),
+        ],
+      ),
+    );
+  }
+}
+
+class FigureImage extends StatelessWidget {
+  final String figureKey;
+  const FigureImage({super.key, required this.figureKey});
+
+  @override
+  Widget build(BuildContext context) {
+    final data = bioImageData[figureKey];
+    if (data == null) {
+      return const SizedBox(
+        height: 80,
+        child: Center(
+          child: Text('الرسم غير متوفر',
+              style: TextStyle(color: Colors.black54)),
+        ),
+      );
+    }
+    return Image.memory(
+      base64Decode(data),
+      fit: BoxFit.contain,
+      gaplessPlayback: true,
+    );
+  }
+}
+
+class FullImagePage extends StatelessWidget {
+  final Figure figure;
+  const FullImagePage({super.key, required this.figure});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text(figure.caption, style: const TextStyle(fontSize: 15))),
+      body: Container(
+        color: Colors.white,
+        child: Center(
+          child: InteractiveViewer(
+            minScale: 1,
+            maxScale: 5,
+            child: FigureImage(figureKey: figure.key),
+          ),
+        ),
       ),
     );
   }
