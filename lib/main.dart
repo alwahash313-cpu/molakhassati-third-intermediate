@@ -3,6 +3,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 
 import 'bio_images.dart';
+import 'chem_images.dart';
+import 'phys_images.dart';
 
 void main() {
   runApp(const MolakhassatiApp());
@@ -3707,6 +3709,151 @@ const Map<int, List<Figure>> biologyFigures = {
   ],
 };
 
+const Map<int, List<Figure>> chemFigures = {
+  0: [
+    Figure('chem_ptable', 'الجدول الدوري للعناصر (بلوكات s وp وd وf)'),
+    Figure('chem_radius', 'تدرج نصف القطر الذري في الجدول الدوري'),
+  ],
+  1: [
+    Figure('chem_group1', 'عناصر الزمرة الأولى IA (الفلزات القلوية)'),
+    Figure('chem_group2', 'عناصر الزمرة الثانية IIA'),
+  ],
+  2: [
+    Figure('chem_hall', 'خلية هول لاستخلاص الألمنيوم'),
+  ],
+  3: [
+    Figure('chem_strong', 'المحلول الإلكتروليتي القوي (HCl)'),
+    Figure('chem_weak', 'المحلول الإلكتروليتي الضعيف (HF)'),
+  ],
+  4: [
+    Figure('chem_si_furnace', 'تحضير السليكون صناعياً (فرن كهربائي)'),
+    Figure('chem_si_zone', 'تنقية السليكون بطريقة منطقة التكرير'),
+  ],
+  5: [
+    Figure('chem_methane', 'جهاز تحضير غاز الميثان مختبرياً'),
+    Figure('chem_ethylene', 'جهاز تحضير غاز الإيثيلين مختبرياً'),
+    Figure('chem_acetylene', 'جهاز تحضير غاز الأستيلين مختبرياً'),
+  ],
+  6: [
+    Figure('chem_nh3_lab', 'تحضير غاز الأمونيا مختبرياً'),
+    Figure('chem_nh3_fountain', 'نافورة غاز الأمونيا'),
+    Figure('chem_haber', 'تحضير الأمونيا صناعياً (طريقة هابر)'),
+    Figure('chem_hno3_lab', 'تحضير حامض النتريك مختبرياً'),
+    Figure('chem_ostwald', 'تحضير حامض النتريك صناعياً (طريقة أوستولد)'),
+    Figure('chem_p_furnace', 'فرن إنتاج الفسفور'),
+  ],
+  7: [
+    Figure('chem_frasch', 'استخراج الكبريت بطريقة فراش'),
+    Figure('chem_so2', 'تحضير غاز ثنائي أوكسيد الكبريت مختبرياً'),
+    Figure('chem_contact', 'تحضير حامض الكبريتيك بطريقة التلامس'),
+  ],
+  8: [
+    Figure('chem_cl2_lab', 'تحضير غاز الكلور مختبرياً'),
+    Figure('chem_nacl_cell', 'التحليل الكهربائي لمنصهر NaCl (تحضير الكلور)'),
+    Figure('chem_hcl_lab', 'تحضير غاز كلوريد الهيدروجين مختبرياً'),
+    Figure('chem_hcl_fountain', 'جهاز نافورة غاز كلوريد الهيدروجين'),
+  ],
+};
+
+const Map<int, List<Figure>> physFigures = {
+  0: [
+    Figure('phys_charging', 'شحن الأجسام بالتماس والحث (خطوات الشحن)'),
+    Figure('phys_electro_a', 'شحن الكشاف بالحث: تقريب الساق المشحونة'),
+    Figure('phys_electro_b', 'شحن الكشاف بالحث: وصل القرص بالأرض'),
+    Figure('phys_electro_c', 'شحن الكشاف بالحث: قطع الاتصال بالأرض'),
+    Figure('phys_sprayer', 'المرذاذ: صبغ السيارات بالكهربائية الساكنة'),
+    Figure('phys_coulomb', 'القوة بين شحنتين: تنافر وتجاذب (قانون كولوم)'),
+    Figure('phys_field_pos', 'خطوط المجال الكهربائي لشحنة موجبة'),
+    Figure('phys_field_neg', 'خطوط المجال الكهربائي لشحنة سالبة'),
+    Figure('phys_field_opp', 'خطوط المجال بين شحنتين مختلفتين'),
+    Figure('phys_field_same', 'خطوط المجال بين شحنتين متماثلتين'),
+    Figure('phys_field_uniform', 'المجال الكهربائي المنتظم بين لوحين متوازيين'),
+  ],
+  1: [
+    Figure('phys_mag_artificial', 'المغانط الصناعية'),
+    Figure('phys_mag_cut', 'تقطيع المغناطيس: كل قطعة لها قطبان'),
+    Figure('phys_mag_filings', 'خطوط المجال المغناطيسي لساق مغناطيسية (برادة الحديد)'),
+    Figure('phys_mag_lines', 'خطوط المجال المغناطيسي لساق مستقيمة ولمغناطيس بشكل U'),
+    Figure('phys_mag_compass', 'رسم خطوط المجال المغناطيسي بالبوصلات الصغيرة'),
+    Figure('phys_mag_rub', 'التمغنط بالدلك'),
+    Figure('phys_mag_induction', 'التمغنط بالحث المغناطيسي'),
+    Figure('phys_mag_electro', 'التمغنط بالتيار الكهربائي المستمر (مغناطيس كهربائي)'),
+  ],
+  2: [
+    Figure('phys_current_dir', 'اتجاه التيار الاصطلاحي واتجاه التيار الإلكتروني'),
+    Figure('phys_circuit_open', 'دائرة كهربائية مفتوحة'),
+    Figure('phys_circuit_closed', 'دائرة كهربائية مغلقة'),
+    Figure('phys_ammeter', 'ربط الأميتر على التوالي مع الحمل'),
+    Figure('phys_voltmeter', 'ربط الفولطميتر على التوازي مع الحمل'),
+    Figure('phys_rheostat', 'المقاومة المتغيرة (الريوستات)'),
+    Figure('phys_ohm_circuit', 'دائرة التحقق من قانون أوم'),
+    Figure('phys_series3', 'ثلاثة مصابيح مربوطة على التوالي'),
+    Figure('phys_series', 'مصابيح على التوالي (a: سليمة، b: أحدها تالف)'),
+    Figure('phys_parallel', 'مصابيح على التوازي (a: سليمة، b: أحدها تالف)'),
+    Figure('phys_res_parallel', 'ثلاث مقاومات مربوطة على التوازي'),
+    Figure('phys_cells_series', 'الخلايا (الأعمدة) مربوطة على التوالي'),
+    Figure('phys_cells_parallel', 'الخلايا (الأعمدة) مربوطة على التوازي'),
+  ],
+  3: [
+    Figure('phys_galvanic', 'الخلية الكلفانية البسيطة'),
+    Figure('phys_dry_cell', 'الخلية الجافة (كاربون – خارصين)'),
+    Figure('phys_car_battery', 'مكونات بطارية السيارة (رصاص – حامض)'),
+    Figure('phys_charging_battery', 'طريقة الربط عند شحن بطارية السيارة'),
+    Figure('phys_li_ion', 'بطارية أيون – الليثيوم'),
+    Figure('phys_fuel_cell', 'آلية عمل خلية وقود الهيدروجين'),
+    Figure('phys_internal_r', 'المقاومة الداخلية للبطارية'),
+  ],
+  4: [
+    Figure('phys_plug_fuse', 'القابس ذو الفاصم'),
+    Figure('phys_earth_circuit', 'الدائرة المؤرضة'),
+    Figure('phys_noearth', 'غسالة بقابس ثنائي (بدون تأريض): خطر الصعقة'),
+    Figure('phys_earthed', 'غسالة بقابس ثلاثي (مؤرضة): آمنة'),
+  ],
+  5: [
+    Figure('phys_oersted', 'تجربة أورستد'),
+    Figure('phys_right_hand_wire', 'قاعدة الكف اليمنى لسلك مستقيم'),
+    Figure('phys_loop_field', 'المجال المغناطيسي لحلقة دائرية'),
+    Figure('phys_solenoid', 'المجال المغناطيسي لملف حلزوني'),
+    Figure('phys_electromagnet_u', 'مغناطيس كهربائي بشكل حرف U'),
+    Figure('phys_bell', 'الجرس الكهربائي'),
+    Figure('phys_induction', 'الحث الكهرومغناطيسي: مغناطيس وملف'),
+    Figure('phys_ac_gen', 'مولد التيار المتناوب البسيط'),
+    Figure('phys_dc_gen', 'مولد التيار المستمر البسيط'),
+    Figure('phys_force_wire', 'القوة المغناطيسية المؤثرة في سلك ينساب فيه تيار'),
+    Figure('phys_motor', 'أجزاء المحرك الكهربائي'),
+  ],
+  6: [
+    Figure('phys_transformer', 'مخطط المحولة الكهربائية'),
+    Figure('phys_step_down', 'المحولة الخافضة للفولطية'),
+    Figure('phys_step_up', 'المحولة الرافعة للفولطية'),
+    Figure('phys_core_plates', 'ترتيب صفائح الحديد المعزولة في قلب المحولة'),
+  ],
+  7: [
+    Figure('phys_hydro', 'محطة كهرومائية لتوليد الطاقة الكهربائية'),
+    Figure('phys_nuclear', 'توليد الطاقة الكهربائية من الطاقة النووية'),
+    Figure('phys_solar_heater', 'السخان الشمسي'),
+    Figure('phys_solar_still', 'المقطر الشمسي لتحلية المياه المالحة'),
+    Figure('phys_wind', 'مبدأ عمل تكنولوجيا طاقة الرياح'),
+    Figure('phys_tide_a', 'طاقة المد والجزر (الصمام الرئيسي مفتوح)'),
+    Figure('phys_tide_b', 'طاقة المد والجزر (الصمام مغلق والتوربين يعمل)'),
+  ],
+  8: [
+    Figure('phys_trop_temp', 'تغير درجة حرارة الهواء مع الارتفاع في التروبوسفير'),
+    Figure('phys_layers', 'طبقات الغلاف الجوي'),
+    Figure('phys_uv_ozone', 'الأشعة فوق البنفسجية وطبقة الأوزون'),
+    Figure('phys_waves', 'انتشار الموجات الأرضية والموجات السماوية'),
+    Figure('phys_iono', 'انعكاس الموجات عن طبقة الأيونوسفير'),
+    Figure('phys_mobile', 'مكونات الهاتف النقال'),
+    Figure('phys_sat', 'أقمار الاتصالات الصناعية'),
+  ],
+};
+
+final Map<String, String> allFigureData = {
+  ...bioImageData,
+  ...chemImageData,
+  ...physImageData,
+};
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -3844,7 +3991,8 @@ class ChemistryPage extends StatelessWidget {
                 ),
                 title: Text(chapter.title,
                     style: const TextStyle(fontWeight: FontWeight.w600)),
-                children: chapter.sections.map((section) {
+                children: [
+                  ...chapter.sections.map((section) {
                   return ListTile(
                     leading: Icon(section.icon, color: gold),
                     title: Text(section.title),
@@ -3862,7 +4010,29 @@ class ChemistryPage extends StatelessWidget {
                       );
                     },
                   );
-                }).toList(),
+                }),
+                  if (chemFigures.containsKey(entry.key))
+                    ListTile(
+                      leading:
+                          const Icon(Icons.image_outlined, color: gold),
+                      title: const Text('الرسومات المهمة'),
+                      subtitle: Text(
+                          '${chemFigures[entry.key]!.length} رسم مهم'),
+                      trailing:
+                          const Icon(Icons.arrow_forward_ios, size: 14),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => FiguresPage(
+                              chapter: chapter.title,
+                              figures: chemFigures[entry.key]!,
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                ],
               ),
             );
           }),
@@ -3921,7 +4091,8 @@ class PhysicsPage extends StatelessWidget {
                 ),
                 title: Text(chapter.title,
                     style: const TextStyle(fontWeight: FontWeight.w600)),
-                children: chapter.sections.map((section) {
+                children: [
+                  ...chapter.sections.map((section) {
                   return ListTile(
                     leading: Icon(section.icon, color: gold),
                     title: Text(section.title),
@@ -3939,7 +4110,29 @@ class PhysicsPage extends StatelessWidget {
                       );
                     },
                   );
-                }).toList(),
+                }),
+                  if (physFigures.containsKey(entry.key))
+                    ListTile(
+                      leading:
+                          const Icon(Icons.image_outlined, color: gold),
+                      title: const Text('الرسومات المهمة'),
+                      subtitle: Text(
+                          '${physFigures[entry.key]!.length} رسم مهم'),
+                      trailing:
+                          const Icon(Icons.arrow_forward_ios, size: 14),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => FiguresPage(
+                              chapter: chapter.title,
+                              figures: physFigures[entry.key]!,
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                ],
               ),
             );
           }),
@@ -4175,7 +4368,7 @@ class FigureImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final data = bioImageData[figureKey];
+    final data = allFigureData[figureKey];
     if (data == null) {
       return const SizedBox(
         height: 80,
