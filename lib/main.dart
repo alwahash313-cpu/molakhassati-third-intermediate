@@ -4779,6 +4779,1143 @@ const Map<int, List<Figure>> geographyFigures = {
   ],
 };
 
+const List<Chapter> englishUnits = [
+  Chapter('Unit 1: Describing things (وصف الأشياء)', [
+    Section('الملخص', Icons.notes, '''محتوى الوحدة:
+• المفردات: أشياء في مجمع التسوق (Mall)، السيارات والقيادة، الصفات التي تصف الناس.
+• الكتابة: كتابة إعلان (Advert)، وصف صورة لشخص، تفسير سبب اختيار شيء.
+• القراءة: قصة Lucky customer 50، ومشروع Project 1: More than just shopping!
+
+لغة الوحدة (In this unit, you have practised):
+1) وصف الأماكن:
+\u202AThere is a supermarket. / It has a supermarket. / It has lots of shops.\u202C
+\u202AThere isn't a swimming pool. / It doesn't have a swimming pool.\u202C
+\u202AIs there a sweet shop? / Are there any sweet shops? / Does it have any sweet shops?\u202C
+2) وصف حالة مستمرة (Continuous):
+\u202AI am talking to my friend. / He is wearing a green jacket.\u202C
+3) قول الوقت (Telling the time):
+\u202AIt's three o'clock. / It's ten past three. (three ten) / It's twenty to four. (three forty)\u202C
+4) ترتيب الصفات: Opinion – Size – Age – Shape – Colour – Origin – Material.
+\u202AIt is a beautiful, little, black, French table.\u202C
+5) وصف الناس: He is quite tall and a bit thin. / He is kind and helpful. / She has beautiful, curly, black hair. / He has straight black hair and brown eyes.
+6) الكلمات المركبة (Compound words): تتكون من كلمتين: litter bin, information desk, sunroof, windproof.
+7) إعطاء الأسباب (Giving reasons):
+\u202AThe car has a Bluetooth connection, so you can listen to music.\u202C
+\u202AIt also has air conditioning to help you keep cool.\u202C
+
+المعدِّلات (Modifiers): very, quite, really, a bit
+• very tall = طويل جداً، quite tall = طويل نوعاً ما، a bit thin = نحيف قليلاً.
+
+التعبير عن الغرض (Purpose):
+\u202A• ... so you can + verb: It has GPS, so you can find your way.\u202C
+\u202A• ... to help you + verb: There are disc brakes to help you stop quickly.\u202C
+
+الوقت (Telling the time):
+• o'clock: تماماً. past: بعد (حتى 30 دقيقة). to: قبل (بعد 30 دقيقة).
+• 3:15 = quarter past three ، 3:30 = half past three ، 3:45 = quarter to four.
+
+مشروع الوحدة (Project 1): تصميم مجمع تسوق جديد (لاحظ المثالين):
+• StudyMall: للتعليم (مكتبة، متحف، معرض فني، فصول، حاسوب وإنترنت، طابعات 3D، ورش مجانية).
+• EcoMall: للبيئة (مبنى من مواد قابلة لإعادة التدوير، محاط بأشجار، حديقة على السطح، طاقة الرياح والشمس، منتجات مستدامة).'''),
+    Section('المفردات Vocabulary', Icons.menu_book, '''في المجمع التجاري (At the mall):
+• mall — مجمع تسوق
+• escalator — سلّم كهربائي
+• lift — مصعد
+• information desk — مكتب الاستعلامات
+• queue — طابور
+• security guard — حارس أمن
+• shop assistant — بائع / موظف مبيعات
+• cinema — سينما
+• plant — نبتة
+• car park — موقف سيارات
+• litter bin — سلة نفايات
+• supermarket — سوبرماركت
+• clothes shop — محل ملابس
+• electronics shop — محل أجهزة إلكترونية
+
+السيارات (Cars and motoring):
+• Bluetooth connection — اتصال بلوتوث
+• electric windows — نوافذ كهربائية
+• sunroof — فتحة سقف
+• tinted windows — نوافذ مظللة
+• hybrid car — سيارة هجينة (محرك كهربائي + بنزين)
+• fuel-saving — موفِّرة للوقود
+• GPS — نظام تحديد المواقع
+• engine — محرك
+• warranty — ضمان
+• safe — آمنة
+• extra features — مزايا إضافية
+• standard — قياسي (موجود في كل الموديلات)
+
+صفات المنتجات (Product adjectives):
+• waterproof — مقاوم للماء
+• windproof — مقاوم للرياح
+• insect-proof — مقاوم للحشرات
+• drop-proof / smash-proof — مقاوم للسقوط / للكسر
+• scratch-resistant — مقاوم للخدش
+• lightweight — خفيف الوزن
+• stylish — أنيق
+• comfortable — مريح
+• colourful — ملوّن
+• disc brakes — فرامل قرصية
+• suspension — نظام التعليق
+• nylon — نايلون
+• trainers — حذاء رياضي
+• skateboard — لوح تزلّج
+• smartwatch — ساعة ذكية
+• battery life — عمر البطارية
+• touchscreen — شاشة لمس
+• strap — سوار الساعة
+• stock — مخزون (we stock = نوفّر)
+
+وصف الأشخاص (Describing people):
+• friendly — ودود
+• hard-working — مجتهد
+• musical — موسيقي
+• creative — مبدع
+• helpful — متعاون
+• kind — لطيف
+• talkative — ثرثار
+• sporty — رياضي
+• clever — ذكي
+• quiet — هادئ
+• imaginative — واسع الخيال
+• good fun — ممتع المعشر
+• tall / short — طويل / قصير
+• thin / fat — نحيف / سمين
+• curly / straight hair — شعر مجعّد / ناعم
+• dark brown eyes — عيون بنية داكنة
+
+قصة Lucky customer 50:
+• poet — شاعر
+• poems — قصائد
+• collection — مجموعة
+• customer — زبون
+• prize — جائزة
+• saving up — يدّخر المال
+• patience — صبر
+• rewarded — كوفئ
+• confusion — ارتباك
+• surge of happiness — موجة من السعادة'''),
+    Section('القواعد Grammar', Icons.calculate, '''\u202A1) There is / There are:\u202C
+• There is + a/an + مفرد: There is a lift. There is an escalator.
+• There are + جمع (أو عدد): There are four restaurants. There are lots of plants.
+• النفي: There isn't a car park. / There aren't any cars.
+• السؤال: Is there a sweet shop? Are there any sweet shops?
+
+2) It has / It doesn't have (للدلالة على الامتلاك أو وجود الأشياء في مكان):
+\u202A• It has a car park. / It has lots of parking spaces. / It has one hundred parking spaces.\u202C
+\u202A• It doesn't have a supermarket. / It doesn't have any computer shops.\u202C
+• السؤال: Does it have any sweet shops?
+
+3) الصفات (Adjectives):
+• تأتي قبل الاسم: It is a fast car.
+• عند استعمال أكثر من صفة نفصل بينها بفاصلة: It is a beautiful, old, red car.
+• الترتيب الصحيح: الرأي ← الحجم ← العمر ← الشكل ← اللون ← الأصل ← المادة
+\u202Afantastic (opinion) – small (size) – old (age) – round (shape) – blue (colour) – Iraqi (origin) – metal (material)\u202C
+
+4) الإعجاب وعدم الإعجاب (Likes and dislikes): الأفعال love, enjoy, like, don't like, hate يتبعها gerund (فعل + ing):
+\u202A• I love running. / He enjoys skating. / They like surfing. / She doesn't like hiking. / I hate swimming.\u202C
+• للغائب (He/She/It) نضيف s: loves, enjoys, likes, hates، وفي النفي doesn't like.
+
+5) التفضيل (Preferences):
+\u202A• I'd like / I'd love + to + verb: I'd like to go to the mall.\u202C
+• I'd rather + verb (بدون to): I'd rather go to the beach.
+
+6) المضارع المستمر والماضي المستمر للوصف:
+• He is wearing a white shirt. (الآن)
+• I was talking to my brother. (كان يتحدث)
+
+7) كتابة إعلان (Writing an advert): استعمل صفات قوية (stylish, lightweight, waterproof)، وأسباباً (so you can ...)، وأرقاماً (Battery life: 12 hours)، وجملاً قصيرة، وعبارات جذابة (Make a Statement!).
+• عند المقارنة بين ساعات ذكية استعمل superlatives: the most expensive, the least expensive, the best battery life.
+• مثال تبرير الاختيار: I'm going to buy the Slimline 40 because it is less expensive than the other watches.'''),
+    Section('القصة والقراءة', Icons.auto_stories, '''Car of the Year (Lesson 3) — مقالة صحفية:
+• Panther 3.0D سيارة هجينة (hybrid) فيها محرك كهربائي وآخر بنزين، لذلك توفر الوقود وتفيد البيئة وجيب السائق.
+• ذاتية الشحن، تتسع لثمانية أشخاص، فيها مقاعد ونوافذ كهربائية ولعبة فيديو، وGPS وBluetooth وسقف مفتوح.
+• تبدو غالية لكنها رخيصة نسبياً، تقطع 12 كيلومتراً لكل لتر، وضمانها أربع سنوات.
+• الكاتب معجب بها: لأن النص يمدحها بكلمات مثل fantastic وgood for the planet وreally safe.
+
+Good friends (Lesson 7) — إيميلان:
+• Dina تكتب لخالتها عن صديقتها Sally: مبدعة تحب الرسم (Art)، مساعدة، قصيرة القامة، شعرها بني مجعّد وعيناها بنيتان داكنتان.
+• Zaid يكتب لصديقه Younis عن Ahmed (الطالب الجديد): مجتهد، رياضي (volleyball)، طويل نوعاً ما، شعره أسود قصير وناعم، ذكي وثرثار ولطيف.
+• المشترك بين Sally وAhmed: كلاهما لطيف (kind) وممتع (good fun).
+
+Lucky customer 50 (قصة للمتعة):
+• Kareem تلميذ مجتهد وهادئ وواسع الخيال، يحب قراءة وكتابة الشعر، وحلمه أن يصبح شاعراً مشهوراً.
+• ادخر مالاً لأشهر ليشتري ديوان الشاعر Mudhafar Al-Nawab الجديد Islands of Salt من مكتبة Al Saqi في شارع المتنبي.
+• وجد طابوراً طويلاً أمام المكتبة فحزن (his heart sank).
+• عندما وصل الباب رن صاحب المكتبة جرساً وصفق الجميع: كان Kareem الزبون رقم 50، وجائزته لقاء الشاعر.
+• وقّع الشاعر الكتاب وأعطاه ست نسخ إضافية، ووعد بقراءة قصائده ونصحه في نشرها.
+• العبرة: الصبر يُكافأ (His patience was being rewarded).
+
+أسئلة القصة مع أجوبتها:
+1) ثلاث صفات لشخصية Kareem: hard-working, quiet, imaginative.
+2) اسم الكتاب الجديد: Islands of Salt.
+3) saving up = وضع المال جانباً (الادخار) لشراء شيء.
+4) الجائزة: لقاء الشاعر Al-Nawab.'''),
+    Section('أسئلة مهمة', Icons.assignment, '''أسئلة من الكتاب مع الأجوبة:
+• Does the writer like the Panther 3.0D? Yes, he does. (العنوان والصفات الإيجابية مثل fantastic، وهي هجينة وآمنة ورخيصة التشغيل).
+\u202A• Find one thing Sally and Ahmed have in common. Both of them are kind / good fun.\u202C
+\u202A• Three differences in appearance: Sally is short, with curly brown hair and dark brown eyes. Ahmed is quite tall, with short, straight, black hair.\u202C
+\u202A• Who is good at Maths? Ahmed (Sally likes Maths but is not very good at it).\u202C
+\u202A• Who has brown eyes? Sally. Who has short straight hair? Ahmed.\u202C
+\u202A• Who plays volleyball? Ahmed.\u202C
+• Project 1: ما الفرق بين StudyMall وEcoMall؟ الأول للتعليم ولا تحتاج فيه مالاً، والثاني للبيئة ويستعمل طاقة الرياح والشمس.
+• جُمل StudyMall: You don't need money in this mall. You can print documents (3D printers).
+• جُمل EcoMall: You can enjoy a drink outside (roof café).
+
+تمارين مهمة (نماذج):
+1) رتّب الصفات: (red / a / car / big / old) ← a big, old, red car.
+2) أكمل: There ___ a supermarket. (is) / There ___ any cars. (aren't)
+3) حوّل للنفي: It has a car park. ← It doesn't have a car park.
+4) اكتب الوقت: 3:50 = ten to four. / 5:15 = quarter past five.
+5) اربط الجملتين بـ so you can: The phone has a camera. You can take photos. ← The phone has a camera, so you can take photos.
+6) اكتب إعلاناً قصيراً (Advert): اسم المنتج + 3 صفات + سبب (so you can ...) + السعر أو عمر البطارية.'''),
+  ]),
+  Chapter('Unit 2: Spare-time activities (أنشطة وقت الفراغ)', [
+    Section('الملخص', Icons.notes, '''محتوى الوحدة:
+• المفردات: أنشطة وقت الفراغ، المعدات، أماكن الزيارة، أنواع القصص، الأفلام والمسرح والحفلات.
+• الكتابة: كتابة ملف معلومات عن فيلم (fact file)، إعلان عن فيلم أو مسرحية، دعوة بالإيميل.
+• القراءة: قصة The champion، وإعلان Tourist City، ومقابلة Lucy Fisher.
+
+لغة الوحدة (In this unit, you have practised):
+1) الحديث عما تحب وما تكره:
+\u202AI love swimming. / I enjoy new food. / I like camping. / I don't like fishing. / I hate sailing.\u202C
+2) التفضيل والاقتراح:
+\u202AI'd like / I'd love to go to the beach. / Would you like to go to the mall? — Yes, I'd love to.\u202C
+\u202AI'd rather go to the funfair. / How about going to the museum? — Yes. Let's go. / Why not go to the theatre? / Let's go to the mall.\u202C
+3) الأسئلة في المضارع البسيط مع to be ومع بقية الأفعال:
+\u202AAre you a movie fan? — Yes, I am. / Is he an actor? — Yes, he is.\u202C
+\u202AHow old are you? — I'm 14. / What kind of TV programme is it? — It's a comedy.\u202C
+\u202ADo you like movies? — Yes, I do. / Does he play your brother? — Yes, he does.\u202C
+4) الأسئلة في الماضي البسيط مع to be ومع بقية الأفعال:
+\u202AWere you happy? — Yes, I was. / Was she surprised? — No, she wasn't.\u202C
+\u202AWhy weren't you hopeful? — Because there were 200 girls at the film test.\u202C
+\u202ADid you always want to be an actor? — Yes, I did. / How did you get the part? — I got it after a film test.\u202C
+5) الحديث عن الأفلام: I watched a good film last week. It was called ... It was about ... The story was incredible, and the songs were amazing!
+
+أسئلة مفيدة عن الفيلم: What's it about? / What kind of film is it? / Who's the main character? / What's the ending like? / Do you think I should see it?
+أنواع الأفلام والقصص: horror (رعب)، comedy (كوميديا)، adventure (مغامرات)، fiction (خيال)، travel (سفر)، factual (وثائقي)، musical (غنائي).
+
+حوار الاقتراح (Lesson 2): قرر الأولاد الذهاب إلى المجمع (mall) لأن فيه محل ألعاب جديد وغداء، بعد أن رفض أحدهم السينما (I'd rather not. I don't like the films at the moment).'''),
+    Section('المفردات Vocabulary', Icons.menu_book, '''الأنشطة (Activities):
+• relax — يسترخي
+• swimming — سباحة
+• sailing — إبحار
+• fishing — صيد السمك
+• shopping — تسوّق
+• picnic — نزهة طعام
+• campfire — نار المخيم
+• camping — تخييم
+• hiking — مشي جبلي
+• surfing — ركوب الأمواج
+• ice skating — تزلّج على الجليد
+• waterskiing — تزلّج على الماء
+• running — جري
+• holiday destination — وجهة العطلة
+• tourist — سائح
+• funfair — مدينة ملاهي
+• museum — متحف
+• theatre — مسرح
+• play — مسرحية
+• concert — حفلة موسيقية
+• circus — سيرك
+• graduation party — حفلة التخرج
+
+الأفلام والتلفاز (Film and TV):
+• star — نجم
+• character — شخصية
+• main character — الشخصية الرئيسة
+• director — مخرج
+• scriptwriter — كاتب سيناريو
+• genre — نوع (الفيلم)
+• released — صدر / عُرض
+• story — قصة
+• plot — حبكة
+• ending — نهاية
+• episode — حلقة
+• audience — جمهور
+• poster — ملصق
+• review — مراجعة / نقد
+• film test — اختبار تمثيل
+• role / part — دور
+• actor / actress — ممثل / ممثلة
+• wax museum — متحف الشمع
+• ringmaster — مقدّم السيرك
+• profit — ربح
+• loan — قرض
+• customers — زبائن
+• rescue — ينقذ
+
+أنواع الكتب والأفلام:
+• adventure — مغامرات
+• comedy — كوميديا
+• fiction — قصة خيالية
+• horror — رعب
+• travel — أدب الرحلات
+• factual — وثائقي
+• musical — غنائي
+• survivor — ناجٍ
+• shipwreck — غرق سفينة
+• island — جزيرة
+• footprint — أثر قدم
+
+قصة The champion:
+• talented — موهوب
+• basketball — كرة السلة
+• injured — مصاب
+• hospital — مستشفى
+• treatment — علاج
+• crutches — عكازان
+• wheelchair — كرسي متحرك
+• encourage — يشجّع
+• support — يدعم
+• teamwork — عمل جماعي
+• competition — منافسة
+• national team — المنتخب الوطني
+• titles — ألقاب/بطولات'''),
+    Section('القواعد Grammar', Icons.calculate, '''\u202A1) love / enjoy / like / hate + gerund (V + ing):\u202C
+\u202A• I love swimming. / She enjoys reading. / They don't like hiking.\u202C
+
+2) التفضيل (Preferences) والاقتراح (Suggestions):
+\u202A• I'd like to / I'd love to + infinitive with to: I'd love to go to the beach.\u202C
+\u202A• I'd rather + infinitive without to: I'd rather go to the park.\u202C
+\u202A• Would you like + to + verb? Would you like to go to the beach this afternoon?\u202C
+• Why not + verb (بدون to) ... ؟ — دائماً سؤال: Why not go to the swimming pool?
+• Let's + verb (بدون to) — دائماً جملة: Let's go to the swimming pool.
+\u202A• How about + gerund (V+ing)? How about going to the cinema?\u202C
+
+3) أسئلة المضارع البسيط (Present simple questions):
+• مع to be: نقدّم الفعل على الفاعل: Are you an actress? Is he her brother?
+• مع بقية الأفعال: Do/Does + الفاعل + الفعل الأصلي: Do you like movies? Does he play your brother?
+• مع كلمات الاستفهام (Wh-): كلمة الاستفهام + do/does: When do you go to the TV studio? Why do you like to act?
+
+4) أسئلة الماضي البسيط (Past simple questions):
+• مع to be: Was she in any other shows? Were you in The Badri Family?
+• مع بقية الأفعال: Did + الفاعل + الفعل الأصلي: Did you want to be an actor?
+• مع Wh-: How did you find out about the role? Where did you see the poster?
+• الإجابة المختصرة: Yes, I was. / No, I wasn't. / Yes, I did. / No, I didn't.
+
+5) كتابة ملف الفيلم (Fact file): Title – Released – Genre – Director – Scriptwriter(s) – Stars – Main characters – The story.
+
+6) كتابة دعوة بالإيميل (Invitation): حدد الحدث، التاريخ (Thursday 15 April)، الوقت، المكان، وسعر التذكرة، واطلب الرد (Let me know ...).
+• أسئلة مفيدة في الحوار: When is it? What time does it start? How much are the tickets? Are you free on Tuesday?'''),
+    Section('القصة والقراءة', Icons.auto_stories, '''Tourist City (إعلان):
+• عطلة مثالية: شاطئ (سباحة، إبحار، صيد)، وبعد الظهر تسوّق أو متحف أو سينما، ومساءً نزهة بالشاطئ ونار مخيم، والتخييم مجاني.
+• أجوبة (True statements): 1 (اسم الوجهة Tourist City) صحيح، 3 (يمكنك زيارة المحال) صحيح، 6 (يمكن التخييم على الشاطئ ليلاً) صحيح. أما 2 (مسرح) و4 (مشي جبلي) فغير مذكورين، و5 (يجب عمل كل الأنشطة) خطأ لأن الزائر يختار ما يريد.
+
+مقابلة Lucy Fisher (نجمة مسلسل The Badri Family):
+• عمرها 16، تلعب دور Samara ابنة عائلة تقليدية، والمسلسل كوميدي، حصلت على الدور بعد أن رأت ملصقاً في المدرسة، واستغرق التصوير ستة أشهر.
+• أخوها في المسلسل يقع في مواقف مضحكة (ملح بدل السكر، يسقط في المسبحة بملابسه).
+
+السيرك (Lesson 7):
+• حفلة التخرج في Al Quds Intermediate School يوم Thursday 15 April الساعة 10 صباحاً (تفتح الأبواب 9:30).
+• Happy Town Circus في الجادرية أسبوعاً من Saturday 18 March، تفتح الأبواب 7:30 ويبدأ العرض 8:00 مساءً، والمقاعد تصل إلى 30,000 دينار.
+
+The Greatest Showman (ملف فيلم):
+• عُرض عام 2017، نوعه Musical، إخراج Michael Gracey.
+• القصة: PT Barnum يفقد عمله كموظف شحن، يفتح متحف شمع، ثم يؤسس السيرك ويصبح ringmaster، ويضم Phillip Carlyle مقابل 10% من الأرباح.
+• أجوبة: وظائفه الثلاث: shipping clerk, museum owner, ringmaster. يجذب الزبائن بعرض أشخاص غير مألوفين (freak performers). ينقذ Carlyle من الحريق.
+
+قصة The champion:
+• Karam طالب موهوب يحب الرياضة وخاصة كرة السلة ويساعد أسرته.
+• أنقذ طفلة من سيارة مسرعة فأصيب قدمه ولم يتمكن الأطباء من إنقاذها.
+• حزن، لكن عائلته دعمته، ثم عرض عليه مدرس الرياضة الانضمام لفريق كرة سلة على الكراسي المتحركة (wheelchair basketball).
+• تعلّم سريعاً، وانضم للفريق الوطني وفاز فريقه بعدة ألقاب.
+• العبرة: الإرادة والدعم يتغلبان على الصعاب. السؤال: ما الذي تغلّب عليه؟ فقدان القدم وحزنه.
+'''),
+    Section('أسئلة مهمة', Icons.assignment, '''أسئلة من الكتاب مع الأجوبة:
+\u202A• Match: How old are you? — I'm 16. / What character do you play? — I play the part of Samara. / What kind of TV programme is it? — It's a comedy. / How did you get the part? — I saw a poster at school. / How long did it take? — Six months.\u202C
+\u202A• What was Karam's favourite sport? Basketball.\u202C
+\u202A• What challenge did Karam overcome? He lost his foot, but he joined a wheelchair basketball team.\u202C
+\u202A• Barnum: What three jobs? shipping clerk, museum owner, ringmaster. Who does Barnum rescue? Carlyle.\u202C
+
+تمارين مهمة (نماذج):
+1) اختر: I'd rather (go / to go) to the park. ← go.
+2) اختر: Would you like (go / to go) to the cinema? ← to go.
+3) أكمل: How about (play / playing) football? ← playing.
+4) كوّن سؤالاً: (you / happy / Were)? ← Were you happy?
+5) كوّن سؤالاً: How / you / get / the part (past) ← How did you get the part?
+6) اكتب ثلاث أسئلة لمقابلة نجم: How old are you? What character do you play? How did you get the part?
+7) صحح: Did she wanted to be an actress? ← Did she want to be an actress?
+8) اكتب دعوة: Hi Ali, would you like to come to the school party on Thursday 15 April? It starts at 10 a.m. Let me know.'''),
+  ]),
+  Chapter('Unit 3: Our world (عالمنا)', [
+    Section('الملخص', Icons.notes, '''محتوى الوحدة:
+• المفردات: الحيوانات البرية وحيوانات المزرعة والطيور والموائل، حجم السكان وصحة الإنسان، البيئة والمحافظة على الحياة البرية.
+• الكتابة: استبيان (questionnaire)، ملف معلومات (fact file) عن الحياة البرية في العراق.
+• القراءة: قصة How to fill a space، ومشروع Project 2: Helping wildlife!
+
+لغة الوحدة (In this unit, you have practised):
+1) المقارنة وأعلى درجة (Comparatives and superlatives):
+cold → colder → coldest ، useful → more useful → most useful ، dangerous → more dangerous → most dangerous
+2) المقارنة الإيجابية والسلبية:
+\u202AA bear is bigger than a wolf. / A wolf is not as big as a bear. / Monkeys are more interesting than sheep. / Small cars are less expensive than big ones.\u202C
+3) المقارنة بين الحاضر والماضي بـ used to:
+\u202AIraq is greener than it used to be. / There is more wildlife than there used to be.\u202C
+4) التحدث عن أمور قد تحدث في المستقبل (الشرط الأول):
+\u202AWhat will happen if people continue to grow taller? — We will need bigger houses.\u202C
+5) وعن أمور غير محتملة (الشرط الثاني):
+\u202AWhat would you do if you were bitten by an animal? — I would go to a doctor.\u202C
+6) التعبير عن الموافقة وعدم الموافقة:
+\u202AI like spiders. — So do I. / I don't mind spiders. — Neither do I. / It would be good if there was less pollution. — I think so, too.\u202C
+7) الضمائر وصفات الملكية: I–me–my ، you–you–your ، he–him–his ، she–her–her ، it–it–its ، we–us–our ، they–them–their.
+\u202AMy friend lent me his pen and I forgot to give it back to him.\u202C
+8) المبني للمجهول (Passive): Marsh Arabs can be found in the south-east of Iraq. / Crops are grown by Marsh Arabs.
+
+مهارات: قواعد الإملاء (التضعيف double consonants)، فهم المعنى الضمني (inferences)، التشديد الصحيح على الكلمات (stress)، علامات الترقيم.'''),
+    Section('المفردات Vocabulary', Icons.menu_book, '''الحيوانات والطيور والموائل:
+• wild animals — حيوانات برية (tiger — نمر)
+• farm animals — حيوانات المزرعة (cow — بقرة)
+• birds — طيور (crow — غراب)
+• habitats — موائل / بيئات معيشة (grazing land — أرض رعي)
+• dangerous — خطير
+• useful — مفيد
+• spider — عنكبوت
+• mosquito — بعوضة
+• fly — ذبابة
+• bat — خفاش
+• wolf — ذئب
+• bear — دب
+• lion — أسد
+• horse — حصان
+• falcon — صقر
+• houbara — الحبارى (طائر)
+• dive — ينقضّ / يغوص
+• hunt — يصطاد
+• wildlife — الحياة البرية
+• species — أنواع
+• extinct — منقرض
+• rare — نادر
+• protected areas — محميات
+• government — حكومة
+• environment — بيئة
+• necessity — ضرورة
+
+السكان والصحة (Our growing world):
+• population — عدد السكان
+• birth rate — معدل الولادات
+• life expectancy — متوسط العمر المتوقع
+• health services — الخدمات الصحية
+• better food — غذاء أفضل
+• pollution — تلوث
+• Bedouin — البدو
+• falconry — الصقارة
+• falconers — الصقّارون
+• desert — صحراء
+• valley — وادي
+
+الأهوار (Life on the marshes):
+• marshes / marshlands — أهوار
+• Marsh Arabs — عرب الأهوار
+• buffalo — جاموس
+• sheep / cattle — غنم / ماشية
+• reeds — قصب
+• arched houses — بيوت مقوّسة
+• artificial reed islands — جزر قصب اصطناعية
+• mashhoof / tarrada — القارب المشحوف / الطرّادة
+• migratory birds — طيور مهاجرة
+• flamingo / pelican / heron — فلامنجو / بجع / مالك الحزين
+• wetland — أرض رطبة
+• at risk — معرّض للخطر
+• drained — جُفّفت
+• restored — أُعيد إحياؤها
+• ecosystem — نظام بيئي
+
+قصة How to fill a space:
+• merchant — تاجر
+• riches — ثروة
+• land — أرض
+• souq — سوق
+• stall — بسطة
+• straw — قش
+• feathers — ريش
+• sacks — أكياس
+• candle — شمعة
+• clever — ذكي
+• coin — عملة معدنية
+• Project 2: bee hotel (فندق نحل) — hollow bamboo sticks (أعواد خيزران مجوفة)، pollinators (ملقّحات)، solitary bees (نحل منفرد)'''),
+    Section('القواعد Grammar', Icons.calculate, '''1) المقارنة (Comparatives):
+• كلمة من مقطع واحد: أضف er ← cold → colder ، big → bigger (تضعيف الحرف الأخير).
+• كلمة من مقطعين تنتهي بـ y: غيّر y إلى i وأضف er ← happy → happier.
+• كلمة من مقطعين: quiet → quieter. ولكن إن كان المقطع الثاني ful نستعمل more/less ← useful → more useful.
+• كلمات مثل clever, gentle, friendly, quiet, simple تقبل er أو more/less: cleverer أو more clever.
+• أكثر من مقطعين: more/less + adjective ← beautiful → less beautiful.
+• Than للمقارنة: England is colder than Iraq. / Tablets are more expensive than books.
+\u202A• (not) as + adjective + as: A bear is not as fast as a lion.\u202C
+
+2) أعلى درجة (Superlatives): the + adjective + est / the most / the least:
+• the coldest ، the biggest ، the most dangerous ، the least expensive.
+\u202A• falcons are the fastest things in the natural world.\u202C
+
+3) used to — للدلالة على عادة أو حالة في الماضي لم تعد موجودة:
+\u202A• The Bedouin used to hunt on camels. / Iraq is greener than it used to be.\u202C
+
+4) الجملة الشرطية الأولى (First conditional) — احتمال حقيقي في المستقبل:
+\u202A• If + present simple, will + infinitive ← If people grow taller, we will need bigger houses. / If the population increases, we will need more food.\u202C
+
+5) الجملة الشرطية الثانية (Second conditional) — حالة خيالية أو غير محتملة:
+\u202A• If + past simple, would + infinitive ← If we didn't have any spiders, we would have more mosquitoes. / If I had lots of money, I would buy presents for all my friends. / If I broke my leg, I would be in a lot of pain.\u202C
+• مع be نستعمل were أو was: If there were more mosquitoes, we would get more bites.
+
+6) الموافقة (Agreeing):
+• جملة مثبتة: I like spiders. ← So do I. / I'm afraid of mosquitoes. ← So am I.
+• جملة منفية: I don't mind spiders. ← Neither do I. / I'm not afraid of flies. ← Neither am I.
+
+7) المبني للمجهول (Active and passive):
+\u202A• Passive = be + past participle (V3): Crops are grown by Marsh Arabs. / Marsh Arabs can be found in the marshes. / Some marshes have been restored.\u202C
+• الفاعل الحقيقي يأتي بعد by (ويُحذف إذا لم يُعرف أو لم يكن مهماً).
+\u202A• Active: People grow rice. ← Passive: Rice is grown (by people).\u202C'''),
+    Section('القصة والأسئلة', Icons.auto_stories, '''How to fill a space — ملخص القصة:
+• تاجر ثري حكيم في العراق باع الذهب وجلود الحيوانات والحرير والملح، وعندما كبر قرر أن يعطي ثروته لأبنائه الثلاثة (Majid وAli وHamad).
+• أعطى كل ابن قطعة أرض متساوية الحجم، وقال إن البيت يذهب لأذكاهم ولا يمكن تقسيمه.
+• أعطى كل ابن عملة صغيرة وقال: من يشتري شيئاً يملأ الغرفة يرث البيت.
+• Majid اشترى قشاً (straw) فملأ نصف الغرفة. Ali اشترى ريشاً (feathers) فملأ نصفها. Hamad عاد متأخراً ومعه شمعة (candle)، أشعلها فملأ الضوء الغرفة كلها.
+• ورث Hamad البيت لأنه الأذكى.
+• العبرة: الذكاء أفضل من الكمية، والفكرة البسيطة قد تحل المشكلة.
+
+أجوبة أسئلة القصة:
+\u202A1) What did the rich merchant sell? gold, animal skins, silks and salt.\u202C
+\u202A2) What did he give to his three sons? the same amount of land, and one coin each.\u202C
+\u202A3) What did each son buy? Majid: straw. Ali: feathers. Hamad: a candle.\u202C
+
+مقال The fastest living things (الصقور):
+• الصقور أسرع المخلوقات، تنقضّ بسرعة تصل إلى 240 كم/ساعة.
+• البدو في الصحراء العربية كانوا يصطادون بالصقور منذ أكثر من ألف سنة، وطائرهم المفضل الحبارى.
+• اليوم الصقارة رياضة لا ضرورة. العيب: قد تُقتل طيور نادرة. الحل: المحميات التي منعت الصيد فزادت أعداد الحياة البرية وصارت البيئة أغنى.
+
+Life on the marshes (حقائق):
+• يعيش عرب الأهوار حياة تقليدية في جنوب شرق العراق، يربّون الجاموس وبعض الغنم والماشية، ويزرعون الرز والقمح والشعير.
+• بيوتهم مقوّسة من القصب (عرضها نحو 3 م وطولها نحو 6 م وارتفاعها أقل من 3 م)، ولها مدخلان، وفيها جزء للعائلة وجزء للحيوانات، ومضيف منفصل.
+• يستعملون المشحوف والطرّادة. في الأهوار نحو 40 نوعاً من الطيور.
+• تعرضت الأهوار للتجفيف في تسعينيات القرن الماضي فتعرضت الطيور والسكان للخطر (40% إلى 60% من عرب الأهوار)، وأُعيد إحياء بعضها بعد إغمارها بالمياه.
+
+أسئلة مفيدة (للتدرب):
+\u202A• Where can Marsh Arabs be found? In the marshlands in the south-east of Iraq.\u202C
+\u202A• What animals do they raise? Buffalo (and some sheep and cattle).\u202C
+\u202A• What are their houses made of? Reeds.\u202C
+\u202A• Make a second conditional: If I found a bird with a broken wing, I would put it in a small box with soft bedding.\u202C
+\u202A• Complete: A lion is (fast) than a bear. ← faster.\u202C
+\u202A• Complete: This is the (dangerous) animal in the zoo. ← the most dangerous.\u202C
+\u202A• Change to passive: People grow wheat in Iraq. ← Wheat is grown in Iraq.\u202C
+\u202A• Agree: I hate flies. ← So do I. / I don't hate flies. ← Neither do I.\u202C'''),
+  ]),
+  Chapter('Unit 4: Review (مراجعة المهارات)', [
+    Section('الملخص', Icons.notes, '''هذه الوحدة مراجعة لمهارات القراءة والاستماع والمحادثة والكتابة (Reading, Listening, Speaking, Writing).
+
+القراءة (Reading tips):
+• Tip: استعمل الدلائل البصرية قبل القراءة: انظر إلى الصور والعناوين (headline) واسأل نفسك: عمّ يتحدث النص؟ وما الكلمات المتوقعة؟
+• Tip 3 — اقرأ الفقرة الأولى (first paragraph): تخبرك عن موضوع المقال، وغالباً: أين حدث الخبر؟ ومتى؟ ومن شارك؟ وفي القصص تحدد المكان والزمان والشخصيات الرئيسة، وفي مقال المجلة تبيّن هل هو بضمير المتكلم (I) فيه آراء وتجارب.
+• Tip 4 — اقرأ الجمل الرئيسة (topic sentences): تبدأ بها الفقرات الإنكليزية عادة، وجمعها معاً يعطي ملخصاً (gist) للمقال.
+
+الاستماع (Listening tips):
+• عندما يتحدث شخص بالإنكليزية لست مضطراً لفهم كل كلمة: الكلمات المهمة تُقال بصوت أعلى وأبطأ (important words).
+• الكلمات الطويلة فيها مقطع واحد مرتفع الصوت (one loud sound)، تعلّم تمييز الكلمة من هذا المقطع.
+• لا تقلق إن لم تسمع المعلومة المهمة أول مرة: غالباً تُكرَّر مرتين.
+
+المحادثة (Speaking tips):
+• Tip 1 — اطلب من الآخر أن يكرر المعلومة: Sorry? / What was that? / What did you say? / I didn't get that.
+• Tip 2 — كرر المعلومة لتُظهر أنك لم تفهم أو متفاجئ أو قبل أن تسأل أو تبدي رأياً: I bought some trainers. — Trainers? What are they? / Green eyes? That's unusual.
+• عندما يعطي أحد رأياً فتفاعل معه: Do you? Don't you? Really? / I prefer them. / I like them.
+• عند لقاء شخص لأول مرة اطرح أسئلة مفتوحة (open) لا مغلقة (closed): Where are you from? بدل Are you English? / What do you like about Iraq? بدل Do you like Iraq?
+
+الكتابة (Writing tips):
+• Tip 1 — ضع خطة (plan) بالمعلومات مرتبة منطقياً: مقدمة الموضوع ← حقائق عن القصة (العنوان، المؤلف، تاريخ النشر) ← تقديم الشخصيات ← سرد القصة باختصار بالترتيب ← رأيك.
+• Tip 2 — اكتب جملاً رئيسة (topic sentences) أولاً: I read a very interesting book recently. / It is called Gulliver's Travels. / It is about a traveller called Lemuel Gulliver. / I think this story is excellent.
+• Tip 3 — دوّن ملاحظات (notes) تحت كل جملة رئيسة: Jonathan Swift, 1726 / tiny people (Lilliputians).
+• Tip 4 — حوّل ملاحظاتك إلى جمل كاملة (sentences).'''),
+    Section('تعابير مفيدة', Icons.menu_book, '''طلب التكرار:
+• Sorry? — عفواً؟
+• What was that? — ماذا قلت؟
+• What did you say? — ماذا قلت؟
+• I didn't get that. — لم أفهم ذلك.
+• Can you say that again? — هل تعيد ذلك؟
+
+التفاعل مع الرأي:
+• Do you? / Don't you? / Really? — حقاً؟
+\u202A• I like war stories. — Do you? I prefer fantasy stories.\u202C
+\u202A• I prefer them. / I like them.\u202C
+
+الأسئلة المفتوحة والمغلقة:
+• Closed: Are you English? — No, American. (إجابة قصيرة)
+• Open: Where are you from? — I'm from the USA. New York, actually. (إجابة مفصلة)
+\u202A• Open: How long are you staying here? What do you like about Iraq?\u202C
+
+الرياضة (من صفحة المراجعة):
+• badminton — تنس الريشة
+• baseball — بيسبول
+• basketball — كرة السلة
+• football — كرة القدم
+• running — جري
+• table tennis — تنس الطاولة
+• tennis — تنس
+• score — نتيجة المباراة (My favourite team won 4–1)
+• excited — متحمس
+• goal — هدف
+
+كلمات الكتابة:
+• author — مؤلف
+• published — نُشر
+• title — عنوان
+• main characters — الشخصيات الرئيسة
+• brief — موجز
+• opinion — رأي
+• summary — ملخص
+• paragraph — فقرة
+• topic sentence — الجملة الرئيسة'''),
+    Section('أسئلة مهمة', Icons.assignment, '''نماذج أسئلة:
+1) ما الذي تخبرك به الفقرة الأولى في المقال؟ ← عمّ يتحدث المقال، ومتى وأين حدث وماذا شارك فيه.
+2) ما فائدة جمل الموضوع (topic sentences)؟ ← جمعها يعطي ملخصاً لفكرة المقال.
+3) أعد الصياغة لطلب التكرار: I didn't understand. ← Sorry? What did you say?
+4) حوّل السؤال المغلق إلى مفتوح: Do you like Iraq? ← What do you like about Iraq?
+5) رتّب خطة تلخيص قصة: Introduce the topic → Give facts (title, author, when published) → Introduce the main characters → Tell the story briefly → Give your opinion.
+6) اكتب ثلاث جمل رئيسة لتلخيص قصة قرأتها:
+\u202A• I read a very interesting book recently.\u202C
+\u202A• It is called ... and it is about ...\u202C
+\u202A• I think this story is excellent.\u202C
+7) لماذا نكرر المعلومة التي نسمعها؟ لنُظهر عدم الفهم أو الدهشة، أو قبل أن نسأل أو نبدي رأياً.
+8) كيف نستعمل الدلائل البصرية قبل القراءة؟ ننظر للصور والعنوان ونفكر في موضوع النص والكلمات المتوقعة.'''),
+  ]),
+  Chapter('Unit 5: News and sport (الأخبار والرياضة)', [
+    Section('الملخص', Icons.notes, '''محتوى الوحدة (حسب فهرس الكتاب):
+• المفردات: الرياضة، أقسام الصحف والمجلات، البيع والشراء، أنشطة المدرسة.
+• الكتابة: تقرير صحفي (news report)، مراجعة (review) لحفلة، استبيان (survey) وجدول عدّ (tally chart).
+• القراءة: مقابلة Dr Nawal Ramzi، صفحة صحيفة Iraqi Morning News، قصة A powerful lesson for everyone، ومشروع Project 3: People who make a difference.
+
+لغة الوحدة (In this unit, you have practised):
+1) الماضي البسيط للسرد (Past simple — narrative):
+\u202AThe Education Minister waved. He drove quickly to his meeting. He didn't stop. He didn't talk to anyone.\u202C
+2) الماضي المستمر لخلفية الأحداث (Past continuous — background):
+\u202AIt was raining. We were playing a game. / It wasn't raining. I wasn't playing well.\u202C
+3) ضمائر الفاعل والمفعول: Salma was with her mother. She was playing in the park. A dog chased her. It ran after the girl. John kicked a football at it.
+4) المستقبل البسيط بـ will:
+\u202AThe charity activities will start at 8:25. The sport activities will finish at 11:30.\u202C
+5) الأسئلة في المستقبل البسيط: When will ... start / finish?
+6) most, some, a few عند عرض الآراء: Most people prefer ... Some people ... A few people ...
+7) the قبل أسماء بعض الدول: the UK, the UAE.
+
+وأنت أيضاً (And you have ...):
+• تحدثت عن نتائج كرة القدم، وفهمت أقسام الصحيفة، واستعملت جدولاً زمنياً، وأجريت استبياناً.
+
+أقسام الصحيفة (Newspaper sections):
+• Home News (الأخبار المحلية)، International News (الأخبار الدولية)، Arts (الفنون والترفيه)، Sport (الرياضة)، Cartoons (الرسوم الهزلية).
+• العنوان (headline) يلخص الخبر، والفقرة الأولى تخبر: What? Where? When? Who?
+
+شراء وبيع (Buying and selling) — أسئلة مفيدة عن دراجة هوائية:
+\u202A• What kind of bike is it? / What size is it? / Is it in good condition? / What colour is it? / How many gears does it have? / Does it have any extras? / What about lights? / How old is it? / How much is it? / Would you take less?\u202C
+• أجوبة نموذجية: It's a mountain bike. It's OK but the front tyre is worn. 50,000 is a good price.'''),
+    Section('المفردات Vocabulary', Icons.menu_book, '''الصحافة (Newspapers):
+• newspaper — صحيفة
+• magazine — مجلة
+• headline — عنوان رئيس
+• report — تقرير
+• reporter / journalist — صحفي
+• editor — رئيس تحرير
+• article — مقال
+• interview — مقابلة
+• section — قسم
+• review — مراجعة / نقد
+• cartoon — رسم كاريكاتير
+• issue — عدد (الصحيفة)
+• advertisement — إعلان
+• survey — استبيان
+• tally chart — جدول عدّ
+• feature — فقرة / ميزة
+• popular — شائع / محبوب
+
+الرياضة (Sport):
+• football — كرة القدم
+• basketball — كرة السلة
+• tennis / table tennis — تنس / تنس الطاولة
+• badminton — ريشة طائرة
+• cricket — كريكت
+• team — فريق
+• match — مباراة
+• goal — هدف
+• score — نتيجة
+• winner — فائز
+• champion — بطل
+• sports city — مدينة رياضية
+• opening ceremony — حفل افتتاح
+
+البيع والشراء:
+• mountain bike — دراجة جبلية
+• town bike — دراجة مدينة
+• gears — تروس / سرعات
+• tyre — إطار
+• worn — بالٍ / متآكل
+• extras — ملحقات
+• lights — أضواء
+• price — سعر
+• second-hand — مستعمل
+• special offer — عرض خاص
+
+أنشطة المدرسة:
+• timetable — جدول زمني
+• charity activities — أنشطة خيرية
+• science activities — أنشطة علمية
+• art activities — أنشطة فنية
+• sport activities — أنشطة رياضية
+• graduation party — حفلة تخرج
+• concert — حفلة موسيقية
+• audience — جمهور
+• clapped — صفّق
+• talented — موهوب
+• disappointed — مخيب الأمل
+
+قصة A powerful lesson:
+• wheelchair — كرسي متحرك
+• treat — نزهة / مكافأة
+• disgust — اشمئزاز
+• embarrassed — محرج
+• respect — احترام
+• proud — فخور
+• patiently — بصبر
+• wiped — مسح
+• lesson — درس
+• hope — أمل
+• charity worker — عامل في جمعية خيرية
+• health worker — عامل صحي'''),
+    Section('القواعد Grammar', Icons.calculate, '''1) الماضي البسيط (Past simple) للسرد (narrative):
+• لسرد الأحداث المتتابعة بالترتيب: He arrived, spoke to reporters and then went to the studio.
+• المثبت: V2 (verb + ed أو شاذ): walked, drove, waved, saw. النفي: didn't + infinitive: He didn't stop. السؤال: Did he stop?
+
+2) الماضي المستمر (Past continuous) لخلفية الأحداث:
+• التركيب: was / were + V-ing: It was raining. We were playing a game. / It wasn't raining. / I wasn't playing well.
+• يصف ما كان يحدث وقت وقوع حدث آخر (بالماضي البسيط): Salma was playing with a ball when a big black dog ran up to her.
+• مثال من المقابلة: I was treating a tooth when the gum started bleeding.
+
+3) ضمائر الفاعل والمفعول:
+• I–me ، you–you ، he–him ، she–her ، it–it ، we–us ، they–them.
+• الفاعل قبل الفعل: She was playing. المفعول بعد الفعل أو حرف الجر: A dog chased her. John kicked a football at it.
+
+4) المستقبل البسيط (Future simple) بـ will:
+• will + infinitive للأحداث المستقبلية التي لا نتحكم بها، وللحقائق والآراء المؤكدة: The charity activities will start at 8:25. The sport activities will finish at 11:30.
+• السؤال: When will the Art activities start? ← The Art activities will start at 8:00 on Sunday.
+• النفي: won't (will not).
+
+5) most / some / a few عند عرض نتائج الاستبيان:
+\u202A• Most people like reading cartoons. It's the most popular feature. Some people prefer true stories. A few people like sports reports.\u202C
+• الترتيب من الأكثر إلى الأقل: most ← some ← a few ← least.
+
+6) the مع أسماء الدول: نستعمل the مع الأسماء الجمعية أو المركبة: the UK, the UAE, the USA، ولا نستعملها مع أغلب الدول: Iraq, Egypt, China.
+
+7) أسئلة المقابلة (من ملاحظات Adil): 
+\u202A• What do you do? / Where do you work? / How long was your training? / What is the best part of your job? / What is the worst part? / What are your interests? / What are your dreams?\u202C
+• تحويل الملاحظات إلى أسئلة: (training – 3 years) ← How long was your training? ← Three years.
+
+8) كتابة تقرير صحفي: عنوان قصير + الفقرة الأولى تجيب (What، Where، When، Who) + تفاصيل مرتبة + اقتباس (quotation) إن وجد، وبالماضي البسيط.'''),
+    Section('القصة والأسئلة', Icons.auto_stories, '''A powerful lesson for everyone — ملخص القصة:
+• جريدة Al Sabah تعطي كل صيف فرصة لتلميذين ليعملا مراسلين. فاز هذا العام Salam Ahmed (15 سنة).
+• في أول يوم كلّفه المحرر (editor) بكتابة تقرير عن افتتاح مطعم كبير في بغداد يوم الثلاثاء.
+• في المطعم لفت نظره ولدٌ يرافق أباه المسن (على كرسي متحرك) إلى مطعم. الأب ضعيف ويوقع الطعام على ثيابه، والناس ينظرون باشمئزاز، لكن ابنه ينظر إليه بحب واحترام، وبعد أن أنهى طعامه نظّف ملابسه ومشّط شعره بصبر.
+• ساد الصمت في المطعم. عند خروجهما قال شيخ حكيم للولد: هل نسيت شيئاً خلفك؟ قال: لا. فقال الشيخ: بلى، تركت درساً لكل ابن وأملاً لكل أب.
+• تبع Salam الولد وأباه وسألهما وكتب ملاحظاته، ثم شكر الولد وقبّل رأس الأب، وكتب أول تقرير له عن هذه القصة المؤثرة فنال المديح.
+• العبرة (powerful lesson): احترام الوالدين والعناية بهم عند الكبر وعدم الخجل من ذلك.
+
+مقابلة Dr Nawal Ramzi (طبيبة أسنان من الموصل):
+• وُلدت في الموصل، وكانت طبيبة أسنان تقرأ كثيراً وتتواصل مع أطباء في دول مختلفة.
+• يوماً كانت تعالج سناً فبدأت اللثة تنزف فجأة، وبعد محاولات نجحت بإيقاف النزف، فكان درساً لتعمل بجهد أكبر.
+
+صفحة الصحيفة Iraqi Morning News:
+• Minister of Education in London: وزير التربية العراقي وصل لندن لمؤتمر دولي للتعليم (Park Lane Hotel) واقترح إنشاء مدارس إنكليزية في العراق لتطوير تعلم الإنكليزية.
+• Basra sports city: افتتح وزير الرياضة مدينة رياضية جديدة في البصرة كلّفت مليار دينار واستغرق بناؤها ثلاث سنوات، وافتُتحت الساعة 11 صباحاً.
+• Boy saves child: صبي (John Smith, 13) أنقذ طفلة عمرها خمس سنوات (Salma) هاجمها كلب كبير في الحديقة، فركل الكرة على الكلب فهرب.
+
+\u202AProject 3 — People who make a difference:\u202C
+• أشخاص يصنعون الفرق: artist, charity worker, farmer, footballer, health worker, teacher, writer.
+• أجرى Adil مقابلة مع خالته Sana (ممرضة، 42 سنة، عملت 17 سنة، تدربت 3 سنوات، تعمل في مركز صحي في الرمادي). أفضل ما في عملها: مساعدة الأطفال المرضى على الشفاء، وأسوأ ما فيه: ساعات العمل الطويلة. هواياتها القراءة والركض، وحلمها زيارة أستراليا.
+
+أسئلة نموذجية مع الأجوبة:
+\u202A• What was the 'powerful lesson'? Caring about and respecting your parents when they are old, and not being embarrassed.\u202C
+\u202A• Who was the lucky boy? Salam Ahmed.\u202C
+\u202A• What did Salam take to the restaurant? A notebook and a camera.\u202C
+\u202A• Put in the correct tense: When the phone rang, I (watch) TV. ← was watching.\u202C
+\u202A• Complete: The party (start) at 10 a.m. tomorrow. ← will start.\u202C
+\u202A• Ask: When will the sport activities finish? ← They will finish at 11:30.\u202C'''),
+  ]),
+  Chapter('Unit 6: Jobs and careers (الوظائف والمهن)', [
+    Section('الملخص', Icons.notes, '''محتوى الوحدة:
+• المفردات: الوظائف وأماكن العمل، التعليم، المدرسة المستقبلية، الاتجاهات.
+• الكتابة: فقرة (paragraph) عن خططك المستقبلية، وصف مهنة بعد مقابلة.
+• الدروس: Jobs and workplaces، Careers advice، The school of the future، a, an or the?، How do you get to ...?، A famous career (Ibn al-Haitham)، A school project، وقصة Hard work pays.
+
+لغة الوحدة (In this unit, you have practised):
+1) الحديث عن المستقبل:
+• be + going to + infinitive للخطة: I'm going to leave school as soon as I'm 16. (المتحدث وضع خطة)
+• will + infinitive لأمر مؤكد في المستقبل: You will get your pocket money on Friday.
+2) who / which / that لتعريف الأشخاص والأشياء: A vet is someone who takes care of sick animals. / That's the dog that frightened my little sister.
+3) استعمال a / an / the:
+• a قبل اسم مفرد عام: Can I have a pen, please? / I want to be a teacher.
+• an قبل حرف علة: Can I have an apple, please?
+• the عند الحديث عن شيء محدد أو سبق ذكره: The pen on your desk is mine. / the sun.
+• لا نستعمل a/an/the قبل: أسماء المواد الدراسية (I'm good at History)، أسماء الأماكن (We go to Dohuk)، الجمع العام (I like apples)، أو ما لا يعد (I don't like meat).
+4) طلب الاتجاهات وإعطاؤها: Can you tell me how to get to the Grand Hotel? — Go to the traffic lights. Turn left at the lights. Go straight along East Street. The Grand Hotel is on the right.
+
+الوظائف: mechanic، architect، pilot، footballer، writer، web designer، vet، astronaut، photographer، dentist، painter (decorator).'''),
+    Section('المفردات Vocabulary', Icons.menu_book, '''الوظائف (Jobs) — a ... is someone who ...:
+• mechanic — ميكانيكي (يصلح السيارات في الكراج)
+• architect — مهندس معماري (يخطط المباني)
+• pilot — طيار
+• footballer — لاعب كرة قدم
+• writer / author — كاتب / مؤلف
+• web designer — مصمم مواقع
+• vet — طبيب بيطري (يعتني بالحيوانات المريضة)
+• astronaut — رائد فضاء
+• photographer — مصور
+• dentist — طبيب أسنان
+• painter (and decorator) — دهّان
+• teacher — معلم
+• nurse — ممرضة
+• doctor — طبيب
+• farmer — مزارع
+• engineer — مهندس
+• fire officer — رجل إطفاء
+• technician — فني
+• headteacher — مدير مدرسة
+• interviewer — مُحاوِر
+
+أماكن العمل (Workplaces):
+• garage — كراج
+• hospital — مستشفى
+• office — مكتب
+• farm — مزرعة
+• school — مدرسة
+• airport — مطار
+• studio — استديو
+• factory — مصنع
+• training centre — مركز تدريب
+• health centre — مركز صحي
+
+الحياة المهنية:
+• career — مهنة / مسيرة مهنية
+• career plans — خطط مهنية
+• career advice — نصائح مهنية
+• advantage / disadvantage — ميزة / عيب
+• plans for the future — خطط المستقبل
+• salary — راتب
+• profit — ربح
+• management — إدارة
+• opportunity — فرصة
+• train / training — يتدرب / تدريب
+• degree — شهادة جامعية
+• blog — مدونة
+
+المدرسة المستقبلية:
+• super school — مدرسة عملاقة
+• virtual learning — تعلّم افتراضي
+• global education — تعليم عالمي
+• facilities — مرافق
+• science park — حديقة علوم
+• connect — يتواصل
+• specialist — متخصص
+
+الاتجاهات (Directions):
+• traffic lights — إشارة المرور
+• turn left / right — انعطف يساراً / يميناً
+• go straight on — استمر مباشرة
+• go along ... Street — سر في شارع
+• go past — مرّ بـ
+• take the first turning on the right — خذ أول منعطف على اليمين
+• next to / near — بجانب / قرب
+• on the left / on the right — على اليسار / اليمين
+• How far is it? How long will it take? — كم تبعد؟ كم يستغرق؟'''),
+    Section('القواعد Grammar', Icons.calculate, '''1) be going to مقابل will:
+• going to = خطة أو نية مسبقة: I'm going to be a doctor. We're going to visit Basra next week.
+• will = قرار لحظي أو أمر مؤكد أو توقع: You will get your pocket money on Friday. I think it will rain.
+• النفي: I'm not going to ... / It won't ... السؤال: Are you going to leave school? Will it rain?
+
+2) الجمل الوصفية (Relative clauses): who للأشخاص، which أو that للأشياء:
+\u202A• A teacher is someone who works in a school.\u202C
+\u202A• A vet is a person who takes care of sick animals.\u202C
+\u202A• A mechanic is someone who repairs cars. / The dog that frightened my sister was big. / A fridge is a machine which keeps food cold.\u202C
+
+3) أدوات التعريف (Articles):
+• a + اسم مفرد يبدأ بحرف ساكن: a teacher, a pen, a university.
+• an + اسم مفرد يبدأ بحرف علة (a, e, i, o, u): an apple, an engineer, an hour.
+• the: شيء محدد/معروف أو وحيد: the sun, the moon, the pen on your desk.
+• لا أداة (zero article): مواد دراسية (History, Maths)، أسماء الأماكن (Dohuk, Iraq)، الجمع العام (I like apples)، ما لا يعد العام (I don't like meat).
+• لكن مع التحديد نستعمل the: I like the apples that grow in our garden. / I like the meat that we had for dinner last night.
+
+4) نصيحة بـ should: I think you should continue studying. / You shouldn't give up school.
+5) طلب النصيحة: Shall I get a job or shall I continue studying?
+6) كتابة فقرة (paragraph): جملة رئيسة (topic sentence) ثم جمل داعمة وخاتمة. مثال: I'm going to study Medicine. First, I want to help sick people. Second, ...'''),
+    Section('القصة والأسئلة', Icons.auto_stories, '''Careers advice (Layla وDania، توأمان عمرهما 15 سنة ونصف):
+• يلتقيان مدير المدرسة لأخذ النصيحة. Layla ليس لديها خطة وتقول: I'm going to leave school as soon as I'm 16. أما Dania فلديها خطة واضحة.
+• تدوّنة Mona (18 سنة): محتارة بين العمل أو الدراسة، تحب العلوم والرياضيات والفن لكنها لا تحب البعد عن البيت. الرد الأفضل: تنصحها بمواصلة الدراسة وتفكر في ما تحب.
+
+The school of the future (مسابقة Hassan):
+• سيكون هناك عدد أقل من المدارس الصغيرة لأن الطلاب سيتعلمون في البيت، ومدرسة عملاقة (super school) في كل مدينة فيها مرافق رياضية وحديقة علوم ومتحف ومسجد.
+• من يهتم بالموسيقى أو العلوم يدرس في مبانٍ خاصة، وبالتعلم الافتراضي (virtual learning) يتواصل الطلاب مع طلاب ومعلمين من العالم (global education).
+
+\u202AA famous career — Ibn al-Haitham:\u202C
+• Abu Ali al-Hasan Ibn al-Haitham وُلد عام 965 في البصرة، درس في البصرة وبغداد، وسافر إلى مصر وإسبانيا. يسمى في أوروبا The Physicist، ويلقّب بـ al-Basri.
+• في مصر احتاجه الخليفة لتنظيم فيضان النيل واقترح نظاماً مائياً لكن المهمة كانت غير عملية آنذاك.
+• لُقّب بـ Father of optics (أبو علم البصريات)، وأشهر كتبه Kitab al-Manazir (Book of Optics) في سبعة مجلدات، وتُرجم إلى اللاتينية ولغات أخرى.
+
+\u202AA school project — Faisal interviews Bob Pearson:\u202C
+• معلم إنكليزي بريطاني يعمل في مركز تدريب لشركة Iraq Petroleum، يدرّس الإنكليزية للمتدربين (فنيين ورجال إطفاء).
+• تاريخه المهني: جامعة لندن (3 سنوات لدراسة الإنكليزية)، دورة تدريب معلمين (سنة)، ثم علّم الأطفال في إيطاليا والكبار في تركيا.
+• المزايا: يحب العمل مع الشباب، والعراق مكان رائع لزيارة المواقع التاريخية، والناس ودودون. العيوب: لا شيء إلا الحر أحياناً. خططه: العودة للجامعة لدرجة أعلى أو الانتقال لبلد آخر.
+
+Hard work pays — ملخص القصة:
+• Dalia فتاة من أسرة بسيطة، توفي والداها وتعيش مع جدّيها العجوزين. اجتهدت في المدرسة وأحبت الرياضيات.
+• زميلتاها الثريتان Huda وMariam كسولتان تشتكيان من المدرسة وتحبان اللعب والهاتف.
+• بعد الامتحانات حصلت Dalia على عمل لدى مزارع (farmer)، وتعلمت إدارة المزرعة وأدخلت بذوراً مقاومة للأمراض وطوّرت نظام المزرعة وتسويق المنتجات، فربحت المزرعة بعد سنتين وزاد راتبها.
+• ادّخرت وأسست عملها الخاص لتقديم استشارات إدارة المزارع، وأصبحت امرأة أعمال قوية بينما بقيت Huda وMariam كسولتين.
+• العبرة: الاجتهاد يؤتي ثماره (Hard work pays).
+
+أسئلة نموذجية:
+\u202A• How is Dalia different from her classmates? She works hard and enjoys learning.\u202C
+\u202A• What job did Dalia get? She worked for a farmer (on a farm).\u202C
+\u202A• Complete: A dentist is someone ___ looks after people's teeth. ← who.\u202C
+\u202A• Choose: I want to be (a / an / the) engineer. ← an.\u202C
+\u202A• Choose: I'm good at (the History / History). ← History.\u202C
+\u202A• Directions: How do I get to the bookshop? ← Go to the traffic lights, turn left, go straight on. It's on the right.\u202C'''),
+  ]),
+  Chapter('Unit 7: Other countries (دول أخرى)', [
+    Section('الملخص', Icons.notes, '''محتوى الوحدة:
+• المفردات: الدول والجنسيات، وسائل التنقل، ساعات الدوام، الصناعة والإنتاج، الألعاب الآسيوية، دول أفريقية (ليبيا والسودان).
+• الكتابة: ملخص لقصة مسموعة، وصف دولة، فقرة عن رحلة.
+• الدروس: Other countries، Different ways of getting around، Travel advertisements، How? Where? When?، I'm sorry، How many are made each day؟، The Asian Games، African countries، وقصة Together for a better school.
+
+لغة الوحدة (In this unit, you have practised):
+1) ظروف الزمان (Adverbs of time): محددة (yesterday, every day, in the morning) وغير محددة (often, usually).
+2) ظروف الكيفية (Adverbs of manner): كلمات مفردة (slowly, well) أو عبارات (by car, on foot, in a friendly way). تنتهي غالباً بـ ly.
+3) ظروف المكان (Adverbs of place): here, there, in the house, on the table.
+4) ترتيب الظروف (Word order):
+• غير المحددة قبل الفعل: I sometimes go swimming.
+• المحددة بالبداية أو النهاية: After school, I'm going to have a swim. / I'm going to have a swim after school.
+• الكيفية بعد الفعل أو المفعول: They walked slowly. / They crossed the desert on foot.
+• المكان بعد الفعل أو المفعول: I put the books on the shelf. / She went to London.
+• عند وجود ثلاثة: الكيفية ثم المكان ثم الزمان (Manner, Place, Time): My friend sang very well (M) at the concert (P) last night (T).
+5) المبني للمجهول (Present and past passive): Cotton and sugar are grown in Sudan. / The highest temperature ever was recorded in Libya in 1972.
+6) الماضي البسيط والمضارع التام (Past simple and present perfect):
+\u202A• I saw him an hour ago. / I lived in that house when I was little.\u202C
+\u202A• I have been to England. / I have been in this school for three years. / I have lived in this house since I was three.\u202C'''),
+    Section('المفردات Vocabulary', Icons.menu_book, '''السفر والتنقل (Ways of getting around):
+• bicycle — دراجة
+• bus — حافلة
+• underground — مترو الأنفاق
+• rickshaw — ريكشا
+• on foot — سيراً على الأقدام
+• by boat / by car / by plane — بالقارب / بالسيارة / بالطائرة
+• camel — جمل
+• souvenir — تذكار
+• journey — رحلة
+• adventurer — مغامر
+• travel programme — برنامج سفر
+• natural features — معالم طبيعية
+• river — نهر
+• mountain — جبل
+• desert — صحراء
+• volcano — بركان
+• crowded — مزدحم
+• flat — مسطح (أرض)
+• extremely — للغاية
+
+دول وجنسيات:
+• country — دولة
+• continent — قارة
+• capital — عاصمة
+• population — عدد السكان
+• area — مساحة
+• climate — مناخ
+• currency — عملة
+• coast / coastline — ساحل
+• Mediterranean Sea — البحر المتوسط
+• fertile — خصب
+• agriculture — زراعة
+• the Nile — نهر النيل
+• Libya — ليبيا
+• Sudan — السودان
+• Khartoum — الخرطوم
+• Tripoli — طرابلس
+• ghibli — ريح جافة حارة محمّلة بالرمل
+
+ساعات الدوام والاعتذار:
+• business hours — ساعات العمل
+• closed / open — مغلق / مفتوح
+• I'm so sorry. — أنا آسف جداً.
+• Don't mention it. — لا داعي لذكر ذلك.
+• That's OK. / It doesn't matter. — لا بأس.
+• Can I get you anything? — هل أحضر لك شيئاً؟
+
+الصناعة (How many are made each day?):
+• crude oil — نفط خام
+• barrel — برميل
+• produced — أُنتج
+• manufactured — صُنّع
+• assembly line — خط تجميع
+• factory / plant — مصنع
+• efficiency — كفاءة
+• mobile phones — هواتف نقالة
+• doubled — تضاعف
+
+الألعاب الآسيوية:
+• Asian Games — الألعاب الآسيوية
+• compete — يتنافس
+• medal — ميدالية (gold / silver / bronze)
+• host city — المدينة المضيفة
+• festival — مهرجان
+• strength and skill — القوة والمهارة
+• cultural exchange — تبادل ثقافي
+• exhibition — معرض
+• participation — مشاركة
+
+قصة Together for a better school:
+• school grounds — ساحة المدرسة
+• weeds — أعشاب ضارة
+• rubbish — نفايات
+• lawn mower — جزّازة عشب
+• seedlings — شتلات
+• tools — أدوات
+• certificate — شهادة
+• Environment Ambassadors — سفراء البيئة
+• dedication — تفانٍ'''),
+    Section('القواعد Grammar', Icons.calculate, '''1) الظروف (Adverbs) — تعطي معلومات عن الفعل (كيف؟ أين؟ متى؟):
+\u202A• We got here very quickly. (how)\u202C
+• Adverbs كلمة مفردة: quickly. Adverbials عبارة: on Tuesday, in the morning, on foot.
+
+2) ظروف التكرار والزمان غير المحدد (always, usually, often, sometimes, never): قبل الفعل الرئيس وبعد to be.
+\u202A• I sometimes go swimming. / He is usually late.\u202C
+
+3) ظروف الزمان المحدد (yesterday, last week, after school): في بداية الجملة أو نهايتها.
+\u202A• After school, I'm going to have a swim. / I'm going to have a swim after school.\u202C
+
+4) ظروف الكيفية (manner): بعد الفعل أو المفعول: They walked slowly. / She plays the piano well.
+• تكوين: adjective + ly ← slow → slowly ، quick → quickly ، careful → carefully (والاستثناءات: good → well, fast → fast, hard → hard).
+
+5) ظروف المكان (place): here, there, at home, in London: بعد الفعل أو المفعول.
+
+6) الترتيب عند ثلاثة ظروف: Manner → Place → Time.
+\u202A• My friend sang very well at the concert last night.\u202C
+
+7) المبني للمجهول بالمضارع والماضي:
+\u202A• Present passive: am/is/are + V3: Cotton and sugar are grown in Sudan. Phones are manufactured in India.\u202C
+\u202A• Past passive: was/were + V3: The highest temperature was recorded in Libya in 1972. In 2008, 150,000 cars were produced.\u202C
+• نستعمل by لذكر الفاعل إذا كان مهماً (by farmers)، ونحذفه إذا كان غير معروف (recorded in 1972).
+
+8) الماضي البسيط مقابل المضارع التام:
+• Past simple: حدث انتهى في زمن محدد: I saw him an hour ago. I lived in that house when I was little. (+ ago, yesterday, in 2010, last year)
+• Present perfect (have/has + V3): تجربة بدون زمن محدد أو حالة مستمرة للآن: I have been to England. / I have been in this school for three years. / I have lived here since I was three.
+• for + مدة (for three years)، since + نقطة بدء (since 2019، since I was three).
+• have been to = زرت وعدت، have gone to = ذهب ولم يعد.
+
+9) الاعتذار والرد (Polite apologies):
+\u202A• I'm sorry. I dropped some water on your shoe. — Don't mention it. I can dry it easily.\u202C
+\u202A• I'm so sorry. I knocked your bag on the floor. — That's OK. / It doesn't matter.\u202C
+\u202A• Oh, I'm sorry (to hear that). Can I get you anything? — That's OK, thanks.\u202C'''),
+    Section('القصة والأسئلة', Icons.auto_stories, '''\u202ADifferent ways of getting around:\u202C
+• هولندا مسطحة لذلك يركب الناس الدراجات الهوائية، ويستعمل سكان لندن الحافلة والمترو لأنها مزدحمة جداً، وفي مدن الهند غالباً الريكشا، وأغلب سكان أمريكا الشمالية يستعملون السيارة نادراً ما يمشون، وفي أفريقيا يسافر الناس بالقوارب والحافلات حسب المنطقة.
+
+Business hours (ساعات الدوام في بريطانيا):
+• المدارس والدوائر الحكومية مغلقة عادة السبت والأحد، والبنوك والبريد تفتح صباح السبت، ويبدأ العمل عادة الساعة 9 صباحاً وينتهي 5:30 مساءً.
+
+Travel advertisements (سلسلة برامج 12 حلقة):
+• كل أسبوع مغامر يزور أعظم المعالم الطبيعية: أنهار وجبال وصحارى وبراكين. الأسبوع الأول: John Wilson من بريطانيا ينطلق في رحلة عبر أفريقيا على نهر النيل (أطول نهر في العالم) من بحيرة فيكتوريا عبر النيل الأبيض إلى الخرطوم، ويسافر بالقارب معظم رحلته.
+
+How many are made each day؟ (أرقام الإنتاج):
+• العراق أنتج نحو مليوني برميل نفط يومياً عام 2006، وتضاعف إلى أربعة ملايين برميل يومياً عام 2020.
+• الهند: 68 مليون هاتف نقال عام 2014، و290 مليوناً عام 2019.
+• مصنع Kia الأوروبي: 150,000 سيارة عام 2008، وأكثر من 350,000 سيارة اليوم.
+
+\u202AThe Asian Games:\u202C
+• تُقام كل أربع سنوات، ويتنافس شباب من أنحاء آسيا في أكثر من 30 رياضة، وتبدأ بعد الحرب العالمية الثانية لبناء الصداقات، وتتضمن عروضاً موسيقية ومعارض فنية.
+• المدن المضيفة الأخيرة: 1990 Beijing، 1994 Hiroshima، 1998 Bangkok، 2010 Guangzhou، 2014 Incheon، 2018 Jakarta وPalembang.
+
+Libya (ليبيا):
+• دولة كبيرة في شمال أفريقيا لها ساحل طويل على البحر المتوسط، عاصمتها Tripoli وثاني مدنها Benghazi، والباقي صحراء وجبال، مناخها حار جاف، والريح الجافة (ghibli) تحمل الرمال في الربيع والخريف.
+• سُجلت أعلى درجة حرارة في العالم 58 درجة مئوية في ليبيا عام 1972.
+• المساحة 1,759,541 كم² والسكان 7,043,769. في الشمال الخصب تهم الزراعة وتربية الأغنام والماعز والماشية.
+
+Together for a better school — ملخص القصة:
+• Ammar رأى ساحة مدرسته في العطلة الصيفية وهي في حالة فوضى (أعشاب طويلة وحجارة ونفايات)، فنظّف وحده يوماً لكن العمل كبير: This job is too big for one person.
+• استعان بصديقه Fahad ثم بثلاثة زملاء (Ayaa وTahar وRaia)، وكل واحد قدّم مساعدة: أخ Fahad معه جزّازة عشب، أخ Ayaa أحضر شتلات، ابن عم Tahar أدوات، وخالة Raia أخبرتهم عن الزهور والأعشاب السامة.
+• جاء آخرون وانضموا إليهم، وفي المساء أصبحت الساحة جميلة (حديقة خضروات وبركة صغيرة من الصخور).
+• كافأهم المعلمون والأهالي بشهادات وجعلوهم سفراء البيئة (Environment Ambassadors).
+• العبرة: العمل الجماعي (teamwork) يحقق ما لا يستطيعه الفرد.
+
+أسئلة نموذجية:
+\u202A• Where was Ibn al-Haitham born (Unit 6)? In Basra.\u202C
+\u202A• How did John Wilson travel through Africa? By boat along the Nile.\u202C
+\u202A• In 2006, how many barrels of crude oil were produced each day in Iraq? About two million.\u202C
+\u202A• Which continents are Libya and Sudan in? Africa.\u202C
+\u202A• What is the capital of Libya? Tripoli.\u202C
+\u202A• Complete: She sang (good / well) at the concert. ← well.\u202C
+\u202A• Complete: I (live) in Basra since 2015. ← have lived.\u202C
+\u202A• Rewrite in passive: They produce many cars in Slovakia. ← Many cars are produced in Slovakia.\u202C
+\u202A• Order: They crossed (on foot / the desert / slowly). ← They crossed the desert slowly on foot.\u202C'''),
+  ]),
+  Chapter('Unit 8: Review (مراجعة)', [
+    Section('الملخص', Icons.notes, '''نصائح المراجعة (Tips):
+
+Listening tip 4 — لماذا نستمع بانتباه؟
+1) لسماع المعلومات بدقة.
+2) لسماع النقاط القواعدية لأنها تحمل المعنى (الزمن مهم: I've worked with this company for ten years. تختلف عن You worked with this company for ten years.).
+3) لسماع شعور المتحدث: أحياناً يكون المعنى في طريقة الكلام لا في الكلمات.
+• اختر الزمن الصحيح للفعل: Fadia: I am phoning / did phone about the class magazine. Haya: I have written / am writing the town news article. I am going to write / have written it this evening.
+
+Speaking tip 5 — العمل مع صديق للمراجعة:
+• خذا أدواراً في طرح أسئلة من صفحات مختلفة، وطالب واحد فقط يفتح كتابه، وتكلم بوضوح.
+• نماذج أسئلة المراجعة: Which day was the party؟ What is Ibn al-Haitham most famous for؟ How did the man travel over the Sahara؟ In 2006, how many barrels of crude oil were produced each day in Iraq؟ Which continents are Libya and Sudan in؟ What is the capital of Libya؟
+
+Reading (قراءة صفحة الصحيفة): انظر بسرعة إلى: اسم الصحيفة، تاريخ الصدور، عنوانين، أسماء صحفيين. مثال: Daily Arab News، Report by Hussam Mustafa: Sports star arrives in Cairo — لاعب Wissam Taha من نادي Al Kahraba وصل القاهرة في زيارة قصيرة، تحدث للصحفيين في المطار، ثم زار استوديو التلفاز واتحاد الكرة المصري، ودرّب أطفالاً في الملعب الرئيس، وفي المساء عاد للعراق بالطائرة.
+• خبر ثانٍ: Police find girl after ... — الشرطة وجدت الطفلة Reem Kamal التي فُقدت أثناء رحلة تسوق عائلية في المول.
+
+Writing tip 5 — تحرير الكتابة (Editing your work):
+• بعد الكتابة راجع النص دائماً لتصحيح الأخطاء. مفتاح الرموز:
+• gr = grammar (قواعد)
+• p = punctuation (ترقيم)
+• wo = word order (ترتيب الكلمات)
+• sp = spelling (إملاء)
+• ww = wrong word (كلمة خاطئة)
+• ^ = word missing (كلمة ناقصة)
+• ~ = join (اربط الجملتين)
+• أمثلة تصحيح: Then they have learnt how to catch falcons. ← Then they learnt how to catch falcons. (الماضي البسيط) / Did you ever watch a falcon diving down from the sky? / They are the fastest things.'''),
+    Section('مراجعة القواعد', Icons.calculate, '''الأزمنة التي تعلمتها في الكتاب:
+1) المضارع البسيط والمستمر: He is wearing a green jacket. I am talking to my friend.
+2) الماضي البسيط (للسرد) والمستمر (للخلفية): It was raining when I left. He didn't stop.
+3) المستقبل: will (مؤكد)، be going to (خطة): You will get your pocket money. I'm going to leave school at 16.
+4) المضارع التام: I have been to England. I have lived here since 2015. (for / since)
+5) المبني للمجهول: Crops are grown by Marsh Arabs. The highest temperature was recorded in Libya in 1972. Some marshes have been restored.
+6) الشرط الأول والثاني: If people grow taller, we will need bigger houses. If I had lots of money, I would buy presents.
+7) المقارنة: colder, more useful, less expensive, not as big as, the most dangerous.
+8) الصفات: ترتيب الصفات: رأي ← حجم ← عمر ← شكل ← لون ← أصل ← مادة.
+9) الضمائر: I–me–my ، you–you–your ، he–him–his ، she–her–her ، it–it–its ، we–us–our ، they–them–their.
+10) أدوات: a / an / the / بدون أداة.
+\u202A11) who / which / that.\u202C
+12) الظروف: زمان، كيفية، مكان، وترتيب Manner–Place–Time.
+13) love / enjoy / like / hate + V-ing؛ I'd like to + V؛ I'd rather + V؛ Let's / Why not + V؛ How about + V-ing.
+14) أسئلة المضارع والماضي (do/does/did) وأسئلة be.
+15) الكلمات المركبة (compound words): litter bin, information desk, sunroof, windproof.
+
+ملاحظات إملائية: ضاعف الحرف الأخير للكلمات القصيرة عند إضافة ed/er/ing (big → bigger, stop → stopped, run → running).'''),
+    Section('أسئلة مهمة', Icons.assignment, '''أسئلة مراجعة نموذجية مع الأجوبة:
+\u202A1) Correct: Then they have learnt how to catch falcons. ← Then they learnt how to catch falcons. (gr)\u202C
+\u202A2) Correct: They are the fast things in the natural world. ← They are the fastest things in the natural world.\u202C
+\u202A3) Correct: Did you ever watch a falcon diving down from sky? ← from the sky. (^ the)\u202C
+\u202A4) What does 'ww' mean in the editing key? wrong word.\u202C
+\u202A5) What does '^' mean? A word is missing.\u202C
+\u202A6) Put the adverbs in order: My friend sang (last night / very well / at the concert). ← My friend sang very well at the concert last night.\u202C
+\u202A7) Choose: I (have lived / lived) here since 2015. ← have lived.\u202C
+\u202A8) Choose: I (have seen / saw) him an hour ago. ← saw.\u202C
+\u202A9) Choose: Cotton (grows / is grown) in Sudan. ← is grown.\u202C
+\u202A10) Choose: If I (had / have) a car, I would drive to Basra. ← had.\u202C
+\u202A11) Complete: A pilot is someone ___ flies a plane. ← who.\u202C
+\u202A12) Complete: I want to be ___ architect. ← an.\u202C
+\u202A13) Ask for repetition politely: Sorry? / What did you say? / I didn't get that.\u202C
+\u202A14) Give directions: Go to the traffic lights. Turn left. Go straight on. It's next to the bank.\u202C
+\u202A15) Polite apology: I'm so sorry. — Don't mention it. / That's OK.\u202C
+
+تلخيص ما يُطلب في الامتحان عادة:
+• القراءة: أسئلة فهم (Who، Where، Why)، وصح وخطأ، وإيجاد المعنى من السياق.
+• القواعد: اختيار الصحيح، تصحيح الأخطاء، تحويل الجمل (مبني للمجهول، شرط).
+• الكتابة: فقرة عن خطط المستقبل، تلخيص قصة (topic sentences)، إعلان، إيميل دعوة.
+• المحادثة: حوارات اقتراح واعتذار واتجاهات وأسئلة مقابلة.'''),
+  ]),
+];
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -4825,6 +5962,14 @@ class HomePage extends StatelessWidget {
                   Widget page;
                   if (subject == 'الكيمياء') {
                     page = const ChemistryPage();
+                  } else if (subject == 'اللغة الإنكليزية') {
+                    page = const ChaptersPage(
+                      title: 'اللغة الإنكليزية',
+                      subtitle: 'مفردات وقواعد وملخصات وحدات الكتاب الثماني',
+                      icon: Icons.translate,
+                      chapters: englishUnits,
+                      figures: {},
+                    );
                   } else if (subject == 'الأحياء') {
                     page = const BiologyPage();
                   } else if (subject == 'الفيزياء') {
