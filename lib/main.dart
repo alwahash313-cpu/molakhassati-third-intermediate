@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 
 import 'bio_images.dart';
+import 'eng_images.dart';
 import 'chem_images.dart';
 import 'phys_images.dart';
 import 'soc_images.dart';
@@ -3854,6 +3855,7 @@ final Map<String, String> allFigureData = {
   ...chemImageData,
   ...physImageData,
   ...socImageData,
+  ...engImageData,
 };
 
 const List<Chapter> socialHistory = [
@@ -5916,6 +5918,448 @@ Writing tip 5 — تحرير الكتابة (Editing your work):
   ]),
 ];
 
+const List<Chapter> englishWriting = [
+  Chapter('Unit 1: Describing things (وصف الأشياء)', [
+    Section('Email: describing a friend (رسالة وصف صديق)', Icons.edit, '''المطلوب (الدرس 7، ص 11):
+• اكتب رسالة إلكترونية (email) إلى صديق أو قريب تصف فيها صديقك المقرّب: شخصيته ومظهره وما يحب.
+• خطة الكتابة: التحية ← سؤال عن الحال ← اسم الصديق وأين تعرفه ← الصفات (kind, helpful, sporty...) ← الشكل (tall, short, curly hair, brown eyes) ← خاتمة قصيرة.
+
+نموذج (Model):
+\u202ATo: Auntie Hana From: Ali\u202C
+\u202ASubject: My best friend\u202C
+\u202ADear Auntie Hana,\u202C
+\u202AHow are you? I hope you are well.\u202C
+\u202AI'm writing to tell you about my best friend, Omar. He is in my class at school and he is really kind and good fun. He is quite tall, with short, straight, black hair and brown eyes.\u202C
+\u202AHe is very sporty and really good at football. He is also hard-working, so he gets good marks in Maths. He is helpful, too. He always helps me with my homework, and I help him with his English.\u202C
+\u202AI think we are going to be good friends for ever!\u202C
+\u202AEmail me soon.\u202C
+\u202ALove, Ali\u202C
+
+الترجمة:
+إلى: الخالة هناء، من: علي، الموضوع: صديقي المقرّب.
+عزيزتي الخالة هناء، كيف حالك؟ أتمنى أن تكوني بخير. أكتب لأخبرك عن أعز أصدقائي عمر. هو في صفي بالمدرسة، وهو لطيف جداً وممتع المعشر. طويل نوعاً ما، شعره أسود قصير وناعم وعيناه بنيتان. رياضي جداً وماهر بكرة القدم، ومجتهد فيحصل على درجات جيدة بالرياضيات. ومتعاون أيضاً، يساعدني دائماً بواجباتي وأنا أساعده بالإنكليزية. أظن أننا سنبقى صديقين إلى الأبد! راسليني قريباً.
+
+تعابير مفيدة:
+\u202A• He/She is quite tall / a bit short / very friendly.\u202C
+\u202A• He has / She has short, straight, black hair and brown eyes.\u202C
+\u202A• She is really creative and paints very well.\u202C
+\u202A• He is good at Maths / volleyball.\u202C
+\u202A• We're going to be good friends for ever!\u202C
+\u202A• Email me soon. / Tell me your news!\u202C'''),
+    Section('Advert: smartwatch (كتابة إعلان)', Icons.edit, '''المطلوب (الدرس 8، ص 12):
+• اكتب إعلاناً (advert) عن منتج (ساعة ذكية، هاتف، حقيبة...). استعمل صفات قوية (stylish, lightweight, waterproof)، وأسباباً (so you can ...)، وأرقاماً (عمر البطارية، السعر)، وجملاً قصيرة، وعنواناً جذاباً.
+
+نموذج (Model):
+\u202AMake a Statement!\u202C
+\u202AThe SmartPro watch\u202C
+\u202AA stylish, lightweight watch for every occasion.\u202C
+\u202AIt has a touchscreen, so you can move easily between functions. It also has a heart-rate monitor to help you keep fit.\u202C
+\u202AIt is waterproof and drop-proof, so you can wear it when you swim or play sport.\u202C
+\u202ABattery life: 10 hours.\u202C
+\u202AAvailable in black, blue and red.\u202C
+\u202APrice: 90,000 IQD.\u202C
+\u202ABuy yours today!\u202C
+
+الترجمة:
+اترك بصمتك! ساعة SmartPro: أنيقة وخفيفة لكل مناسبة. فيها شاشة لمس لتنتقل بسهولة بين الوظائف، ومقياس لنبض القلب ليساعدك على الحفاظ على لياقتك. مقاومة للماء والسقوط فيمكنك ارتداؤها أثناء السباحة أو الرياضة. عمر البطارية 10 ساعات. متوفرة بالأسود والأزرق والأحمر. السعر 90,000 دينار. اشترِها اليوم!
+
+كيف تختار الأفضل (مقارنة بين الإعلانات): the most / the least expensive، the best battery life، the best for water sports.
+• جملة التبرير: I'm going to buy the Slimline 40 because it is less expensive than the other watches. It is also lightweight and easy to set up.
+
+تعابير مفيدة:
+\u202A• A stylish, lightweight ... for every occasion.\u202C
+\u202A• It has ..., so you can + verb.\u202C
+\u202A• ... to help you + verb.\u202C
+\u202A• Waterproof / drop-proof / smash-proof.\u202C
+\u202A• Battery life: ... hours.\u202C
+\u202A• Available in ... colours.\u202C'''),
+    Section('Project 1: design a new mall (مجمع جديد)', Icons.edit, '''المطلوب (Project 1، ص 17):
+• صمم مجمعاً تجارياً جديداً (mall) يفعل أكثر من التسوق. سمّه، واكتب الأماكن التي فيه، وارسمه، ثم اعرضه على الصف.
+• أفكار الكتاب: Education، Arts، History، Animals.
+
+نموذج (Model):
+\u202AThe BookMall\u202C
+\u202AMy new mall is not only for shopping. It is a mall for reading and learning, so I call it the BookMall.\u202C
+\u202AIt has a big library with thousands of books, and there is a café where people can read and drink tea. There is also a history museum and an art gallery.\u202C
+\u202AThere are workshops for children, so they can learn to paint and write stories. On the roof, there is a beautiful garden with plants and trees.\u202C
+\u202AIt doesn't have a supermarket, but it has a small shop that sells books and pens.\u202C
+\u202AI think everybody will love the BookMall because it is quiet, useful and fun.\u202C
+
+الترجمة:
+مجمع الكتب: مجمعي ليس للتسوق فقط بل للقراءة والتعلم، لذلك سميته BookMall. فيه مكتبة كبيرة بآلاف الكتب ومقهى يقرأ فيه الناس ويشربون الشاي، وفيه متحف تاريخ ومعرض فني، وورشات للأطفال ليتعلموا الرسم وكتابة القصص، وفي السطح حديقة جميلة. ليس فيه سوبرماركت لكن فيه محلاً صغيراً يبيع الكتب والأقلام. أظن أن الجميع سيحبونه لأنه هادئ ومفيد وممتع.
+
+قواعد مستعملة: There is / There are, It has / It doesn't have, so you can, لأن (because).
+تعابير مفيدة: It is a mall for ... / There is a ... where people can ... / It has ... and ... / Everybody will love it because ...'''),
+  ]),
+  Chapter('Unit 2: Spare-time activities (أنشطة وقت الفراغ)', [
+    Section('Email invitation (رسالة دعوة)', Icons.edit, '''المطلوب (ص 25 ص 27):
+• اكتب رسالة دعوة (invitation) لصديق لحضور حفلة أو عرض. اذكر: الحدث، اليوم والتاريخ، الوقت، المكان، السعر أو التفاصيل، واطلب الرد.
+
+نموذج (Model):
+\u202ATo: Sara From: Hassan\u202C
+\u202ASubject: Invitation to my birthday party\u202C
+\u202AHi Sara,\u202C
+\u202AWould you like to come to my birthday party? It's on Friday 12 May at my house. The party starts at 5 p.m. and finishes at 8 p.m. We're going to have a barbecue and play games.\u202C
+\u202AAre you free on Friday? Let me know by Wednesday, so I can plan the food.\u202C
+\u202APS The party is free, but please bring a small present!\u202C
+\u202AI hope you can come.\u202C
+\u202AHassan\u202C
+
+الترجمة:
+هل تحبين أن تأتي إلى حفلة عيد ميلادي؟ ستكون يوم الجمعة 12 أيار في بيتنا، تبدأ الخامسة مساءً وتنتهي الثامنة. سنشوي ونلعب ألعاباً. هل أنتِ متفرغة يوم الجمعة؟ أخبريني قبل الأربعاء لأخطط للطعام. ملاحظة: الحفلة مجانية لكن أحضري هدية صغيرة! آمل أن تأتي.
+
+حوار الدعوة:
+\u202A• Would you like to come to ...? — Oh, that sounds good. When is it?\u202C
+\u202A• It's on Thursday. — What time does it start? — At 10 a.m.\u202C
+\u202A• How much are the tickets? — They're free. Shall I get one for you?\u202C
+\u202A• Yes, please. I'm looking forward to it!\u202C
+
+تعابير مفيدة:
+\u202A• Would you like to come to ...? / Are you free on ...?\u202C
+\u202A• Let me know by ... / as soon as possible.\u202C
+\u202A• The party starts at ... and finishes at ...\u202C
+\u202A• Shall I get ...? / I'm looking forward to it!\u202C'''),
+    Section('Fact file: a film (ملف معلومات عن فيلم)', Icons.edit, '''المطلوب (الدرس 6، ص 26):
+• أكمل ملف معلومات (fact file) عن فيلم تعرفه: العنوان، سنة الصدور، النوع، المخرج، النجوم، الشخصيات الرئيسة، ثم القصة بالماضي أو المضارع.
+• القصة تُكتب غالباً بالمضارع البسيط (present simple): Barnum gets married ... / he opens a wax museum.
+
+نموذج (Model):
+\u202ATitle: Finding Nemo\u202C
+\u202AReleased: 2003\u202C
+\u202AGenre: Animated adventure\u202C
+\u202ADirector: Andrew Stanton\u202C
+\u202AMain characters: Nemo, Marlin, Dory\u202C
+\u202AThe story: Nemo is a young clownfish who lives with his father, Marlin, in the sea. One day a diver catches Nemo and takes him to a fish tank in a dentist's office. Marlin is very afraid, so he goes to look for his son.\u202C
+\u202AOn the way, he meets a friendly fish called Dory. They swim across the ocean and meet many dangerous animals. In the end, they find Nemo and the family is happy again.\u202C
+\u202AInteresting fact: the film is about love, courage and friendship.\u202C
+
+الترجمة:
+العنوان: البحث عن نيمو. صدر: 2003. النوع: مغامرة رسوم متحركة. المخرج: آندرو ستانتون. الشخصيات: نيمو ومارلين ودوري. القصة: نيمو سمكة مهرّجة صغيرة تعيش مع أبيها مارلين في البحر. يوماً يمسك غواص نيمو ويأخذه إلى حوض سمك في عيادة طبيب أسنان. يخاف مارلين فيذهب للبحث عن ابنه. في الطريق يقابل سمكة ودودة اسمها دوري. يسبحان عبر المحيط ويقابلان حيوانات خطرة، وفي النهاية يجدان نيمو وتفرح العائلة من جديد.
+
+تعابير مفيدة:
+\u202A• Title / Released / Genre / Director / Scriptwriter / Stars / Main characters.\u202C
+\u202A• It is about ... / The story is about ...\u202C
+\u202A• One day ... / On the way ... / In the end ...\u202C'''),
+  ]),
+  Chapter('Unit 3: Our world (عالمنا)', [
+    Section('Questionnaire (استبيان)', Icons.edit, '''المطلوب (الدرس 6، ص 36):
+• اكتب استبياناً (questionnaire) من 3 أسئلة، لكل سؤال ثلاثة اختيارات (a, b, c)، ونظام نقاط يبين النتيجة. الأسئلة تبدأ بـ What would you do if ...؟ (الشرط الثاني).
+
+نموذج (Model):
+\u202ACARING FOR THE ENVIRONMENT\u202C
+\u202AHow do you feel about the environment? Choose your answers and find out.\u202C
+\u202A1 What would you do if you saw a pile of rubbish in the park?\u202C
+\u202A(a) Walk away. It's not my problem.\u202C
+\u202A(b) Tell my friends about it.\u202C
+\u202A(c) Pick it up and put it in the bin.\u202C
+\u202A2 What would you do if you saw a tap dripping at school?\u202C
+\u202A(a) Ignore it.\u202C
+\u202A(b) Tell the teacher.\u202C
+\u202A(c) Turn it off at once.\u202C
+\u202A3 If you had some old clothes, what would you do?\u202C
+\u202A(a) Throw them away.\u202C
+\u202A(b) Keep them in the cupboard.\u202C
+\u202A(c) Give them to people who need them.\u202C
+\u202AABOUT YOUR ANSWERS\u202C
+\u202A(c) answers = 2 points, (b) answers = 1 point, (a) answers = 0.\u202C
+\u202AIf you have 5 points or more, you care a lot about the environment.\u202C
+\u202AIf you have fewer than 4 points, you need to learn more about it.\u202C
+
+الترجمة:
+العناية بالبيئة: ماذا ستفعل لو رأيت كومة نفايات في الحديقة؟ (أ) أبتعد، ليست مشكلتي. (ب) أخبر أصدقائي. (ج) ألتقطها وأضعها في السلة. ... وهكذا. الإجابات (ج) = نقطتان، (ب) = نقطة، (أ) = صفر. من حصل على 5 نقاط أو أكثر يهتم كثيراً بالبيئة، ومن حصل على أقل من 4 يحتاج أن يتعلم أكثر.
+
+القاعدة: What would you do if + past simple? → I would + infinitive. (الشرط الثاني)'''),
+    Section('Fact file: wildlife in Iraq (حقائق عن الحياة البرية)', Icons.edit, '''المطلوب (الدرس 8، ص 38):
+• اكتب ملف معلومات (fact file) عن الحياة البرية أو عرب الأهوار أو حيوان في العراق. استعمل المبني للمجهول (passive) والحقائق والأرقام وماذا تغيّر في السنوات الأخيرة.
+
+نموذج (Model):
+\u202AWildlife in the Marshes of Iraq\u202C
+\u202AThe marshes are in the south-east of Iraq. Many animals can be found there. Buffalo are raised by the Marsh Arabs, and some sheep and cattle are also kept. Rice, wheat and barley are grown near the water.\u202C
+\u202AAbout forty species of birds can be found in the marshlands. The marshes were once home to millions of birds, and they were a stopover for migratory birds such as flamingos and pelicans.\u202C
+\u202AWhat has changed in recent years? In the 1990s the marshes were drained, so many birds and people were at risk. However, some marshes have been restored after flooding the area, and wildlife is slowly returning.\u202C
+
+الترجمة:
+الحياة البرية في أهوار العراق: تقع الأهوار في جنوب شرق العراق وتوجد فيها حيوانات كثيرة. يربّي عرب الأهوار الجاموس ويحتفظون ببعض الغنم والماشية، ويزرعون الرز والقمح والشعير قرب الماء. يوجد نحو أربعين نوعاً من الطيور، وكانت الأهوار موطناً لملايين الطيور ومحطة للطيور المهاجرة كالفلامنجو والبجع. ما الذي تغيّر؟ في التسعينيات جُففت الأهوار فتعرضت الطيور والسكان للخطر، لكن بعضها أُعيد إغماره بالمياه والحياة البرية تعود ببطء.
+
+القواعد: Passive: Buffalo are raised ... / can be found / were drained / have been restored.
+تعابير مفيدة: Where can ... be found? / ... species of birds / at risk / extinct / restored.'''),
+    Section('Instructions: a bird feeder (تعليمات)', Icons.edit, '''المطلوب (Project 2، ص 43):
+• اكتب تعليمات (instructions) لصنع مغذّي للطيور: المواد (You need ...) ثم الخطوات بالترتيب بكلمات التسلسل (First, Then, Next, Finally).
+
+نموذج (Model):
+\u202AHow to make a bird feeder\u202C
+\u202AYou need: a grapefruit, two sticks, some string and some seeds.\u202C
+\u202AFirst, cut the grapefruit in half. Eat the fruit and keep the skin.\u202C
+\u202AThen put two sticks through the skin in a cross shape.\u202C
+\u202ANext, tie some string to the sticks.\u202C
+\u202AAfter that, fill the grapefruit skin with seeds.\u202C
+\u202AFinally, hang the feeder from a tree in your garden. The birds can stand on the sticks when they eat the seeds.\u202C
+\u202ACount how many birds use your feeder, and share the number with the class.\u202C
+
+الترجمة:
+كيف تصنع مغذّياً للطيور: تحتاج إلى حبة غريب فروت وعودين وخيط وبعض البذور. أولاً قص الغريب فروت نصفين، وكل الثمرة واحتفظ بالقشرة. ثم مرّر العودين عبر القشرة بشكل صليب. بعدها اربط خيطاً بالعودين. وبعد ذلك املأ القشرة بالبذور. أخيراً علّقه على شجرة في حديقتك، فتقف الطيور على العودين وهي تأكل. عدّ الطيور التي تستعمل المغذّي وشارك العدد مع الصف.
+
+كلمات التسلسل: First, / Then, / Next, / After that, / Finally,
+أفعال الأمر: cut, put, tie, fill, hang, melt, roll, thread.'''),
+  ]),
+  Chapter('Unit 4: Review (مراجعة المهارات)', [
+    Section('Summary of a story (تلخيص قصة)', Icons.edit, '''المطلوب (الدرس 4: Writing، ص 49):
+• اكتب ملخصاً (summary) لكتاب أو مسرحية أو فيلم تعرفه باتباع الخطوات:
+• Writing tip 1: ضع خطة منطقية: مقدمة الموضوع ← حقائق (العنوان والمؤلف وسنة النشر) ← الشخصيات الرئيسة ← القصة باختصار بالترتيب ← رأيك.
+• Writing tip 2: اكتب الجمل الرئيسة (topic sentences) أولاً.
+• Writing tip 3: دوّن ملاحظات تحت كل جملة رئيسة.
+• Writing tip 4: حوّل الملاحظات إلى جمل كاملة.
+
+نموذج (Model) — Gulliver's Travels:
+\u202AI read a very interesting book recently. It is called Gulliver's Travels. It was written by Jonathan Swift, and it was published in 1726.\u202C
+\u202AIt is about a traveller called Lemuel Gulliver. He is lost at sea and he swims to an island.\u202C
+\u202AGulliver wakes up and finds that he is tied to the ground. The Lilliputians, who are very tiny people, have captured him. At first they are afraid of him, but later they become friends. In the end, the Lilliputians set him free and Gulliver returns home.\u202C
+\u202AI think this story is excellent because it is exciting and funny, and I want to read it again.\u202C
+
+الترجمة:
+قرأت كتاباً ممتعاً جداً مؤخراً. اسمه رحلات غاليفر، كتبه جوناثان سويفت ونُشر عام 1726. يدور حول مسافر اسمه ليمويل غاليفر يضيع في البحر ويسبح إلى جزيرة. يستيقظ فيجد نفسه مربوطاً بالأرض، فقد أسره الليليبوتيون وهم أناس صغار جداً. في البداية يخافون منه لكنهم يصبحون أصدقاء لاحقاً، وفي النهاية يطلقون سراحه ويعود غاليفر إلى بيته. أظن أن القصة رائعة لأنها مثيرة ومضحكة وأريد قراءتها مرة أخرى.
+
+الجمل الرئيسة (Topic sentences) بالترتيب:
+1) I read a very interesting book recently. (مقدمة)
+2) It is called ... (الحقائق)
+3) It is about a traveller called ... (الشخصيات)
+4) Gulliver is lost at sea. (القصة)
+5) I think this story is excellent. (الرأي)'''),
+  ]),
+  Chapter('Unit 5: News and sport (الأخبار والرياضة)', [
+    Section('News report (تقرير صحفي)', Icons.edit, '''المطلوب (القصة، ص 60):
+• كلّفك رئيس التحرير بكتابة تقرير عن افتتاح مطعم كبير في بغداد. اكتب تقريراً بالماضي البسيط: عنوان قصير، وفقرة أولى تجيب (What? Where? When? Who?)، ثم التفاصيل، وربما اقتباس (quotation).
+
+نموذج (Model):
+\u202ANEW RESTAURANT OPENS IN BAGHDAD\u202C
+\u202AA big new restaurant opened in Baghdad on Tuesday. The restaurant, called Al Nakheel, is in Al Mansour and it has two floors and a garden.\u202C
+\u202AThe Minister of Tourism cut the ribbon at 11 a.m. About two hundred guests came to the opening, and many families enjoyed a free lunch.\u202C
+\u202AThe owner, Mr Salim Hasan, said, "I want everyone to feel welcome. We cook traditional food with fresh ingredients."\u202C
+\u202AThe restaurant is open every day from 10 a.m. to midnight. Reported by Salam Ahmed.\u202C
+
+الترجمة:
+افتتاح مطعم جديد في بغداد: افتُتح مطعم كبير جديد في بغداد يوم الثلاثاء. المطعم اسمه النخيل في المنصور وله طابقان وحديقة. قصّ وزير السياحة الشريط الساعة 11 صباحاً، وحضر نحو مئتي ضيف، واستمتعت عائلات كثيرة بغداء مجاني. قال صاحبه السيد سالم حسن: أريد أن يشعر الجميع بالترحيب، نطبخ أكلاً تقليدياً بمواد طازجة. المطعم مفتوح كل يوم من 10 صباحاً إلى منتصف الليل. كتبه Salam Ahmed.
+
+عناصر التقرير الجيد:
+• Headline قصير ويلخص الخبر.
+• الفقرة الأولى: What, Where, When, Who.
+• الماضي البسيط: opened, cut, said, came.
+• اقتباس بين علامتي تنصيص: The owner said, "...".
+• اسم كاتب التقرير في الآخر (Reported by ...).'''),
+    Section('Survey results (نتائج استبيان)', Icons.edit, '''المطلوب (الدرس 5 ص 58):
+• تخيّل أنك تنشئ مجلة أو موقعاً لطلاب مدرستك. أجرِ استبياناً (survey) بين زملائك عن أكثر الأبواب شعبية، وارسم جدول عدّ (tally chart)، ثم اكتب فقرة بنتائجه باستعمال: most, some, a few, the least.
+
+نموذج (Model):
+\u202AOur class magazine survey\u202C
+\u202AWe asked twenty students which features they like best in a school magazine.\u202C
+\u202AMost students like reading cartoons. It is the most popular feature. Some students enjoy true stories and sport, and a few students like music and puzzles best.\u202C
+\u202AThe least popular feature is fashion. Only one student chose it.\u202C
+\u202ASo our magazine will have lots of cartoons, a sport page and some true stories.\u202C
+
+الترجمة:
+استبيان مجلة الصف: سألنا عشرين طالباً عن الأبواب التي يحبونها في مجلة المدرسة. أغلب الطلاب يحبون الرسوم الكاريكاتيرية، وهي الأكثر شعبية. بعض الطلاب يستمتعون بالقصص الحقيقية والرياضة، وقلة منهم تفضل الموسيقى والألغاز. الأقل شعبية هو الموضة، اختاره طالب واحد فقط. لذلك ستضم مجلتنا كثيراً من الكاريكاتير وصفحة رياضة وبعض القصص الحقيقية.
+
+كلمات النتائج:
+• Most people ... (الأغلبية)
+• Some people ... (بعضهم)
+• A few people ... (قلة)
+\u202A• The most popular / the least popular feature.\u202C'''),
+    Section('Project 3: someone who makes a difference', Icons.edit, '''المطلوب (Project 3، ص 63):
+• فكر بشخص تعرفه يصنع الفرق (ممرضة، معلم، مزارع، رجل إطفاء...). أجرِ معه مقابلة (interview) واكتب مقالاً: من هو؟ عمره؟ منذ متى يعمل؟ التدريب؟ أفضل ما في عمله؟ أسوأ ما فيه؟ هواياته؟ حلمه؟
+
+نموذج (Model):
+\u202AA Person Who Makes a Difference\u202C
+\u202ABy Yusuf Ali\u202C
+\u202ADo you ever think about the people around you who make a difference? My uncle Karim is one of these people, so I interviewed him.\u202C
+\u202AMy uncle makes a difference by teaching children. He is 38 years old and he has been a teacher for 12 years. After training for four years, he started his career, and today he is working in a primary school in Najaf.\u202C
+\u202AI asked him what his favourite part of the job is, and he told me that it is seeing his students learn new things. However, teaching can be tough because there is a lot of homework to check, so when he is not working he plays football to relax.\u202C
+\u202AHis dream is to build a library for children in his town.\u202C
+\u202AI am really proud of my uncle. Because of him, I want to make a difference when I am older, too.\u202C
+
+الترجمة:
+شخص يصنع الفرق: هل تفكر يوماً بالناس حولك الذين يصنعون الفرق؟ عمي كريم واحد منهم فأجريت معه مقابلة. يصنع الفرق بتعليم الأطفال. عمره 38 سنة وهو معلم منذ 12 سنة. بعد تدريب أربع سنوات بدأ مهنته، ويعمل اليوم في مدرسة ابتدائية في النجف. سألته عن أفضل ما في عمله فقال إنه رؤية طلابه يتعلمون أشياء جديدة، لكن التعليم متعب لأن هناك واجبات كثيرة للتصحيح، فعندما لا يعمل يلعب كرة القدم ليسترخي. حلمه بناء مكتبة للأطفال في بلدته. أنا فخور جداً بعمي، وبسببه أريد أن أصنع الفرق عندما أكبر.
+
+أسئلة المقابلة (مفيدة): What do you do? / How long have you been a ...? / How long was your training? / What is the best part of your job? / What is the worst part? / What do you do to relax? / What is your dream?'''),
+  ]),
+  Chapter('Unit 6: Jobs and careers (الوظائف والمهن)', [
+    Section('Reply to Mona\'s blog (رد على مدونة)', Icons.edit, '''المطلوب (الدرس 3، ص 67):
+• Mona عمرها 18، محتارة بين العمل أو مواصلة الدراسة. اكتب ردك على مدونتها بنصيحة مناسبة باستعمال should / shouldn't، مع الأسباب.
+
+نموذج (Model):
+\u202AHi Mona,\u202C
+\u202AI think you should continue studying. You enjoy Science, Maths and Art, and you are getting good grades, so you shouldn't give up school now.\u202C
+\u202AYou should talk to your teachers and do some research about different jobs. If you don't want to be away from home, you could study at a college in your town.\u202C
+\u202AYou will have more choices if you finish your education. You shouldn't decide in a hurry.\u202C
+\u202AGood luck!\u202C
+\u202ARania\u202C
+
+الترجمة:
+أهلاً منى، أظن أنك يجب أن تواصلي الدراسة. تستمتعين بالعلوم والرياضيات والفن وتحصلين على درجات جيدة، فلا ينبغي أن تتركي المدرسة الآن. تحدثي مع معلميك وابحثي عن مهن مختلفة. وإن كنتِ لا تحبين البعد عن البيت فيمكنك الدراسة في كلية قريبة. سيكون لديك خيارات أكثر إذا أكملتِ تعليمك. لا تقرري على عجل. حظاً سعيداً!
+
+تعابير النصيحة:
+\u202A• I think you should ... / You should ... / You shouldn't ...\u202C
+• You could + verb (اقتراح)
+• If you ..., you will ... (شرط)
+\u202A• Why don't you ...? / It's a good idea to ...\u202C'''),
+    Section('Paragraph: my future plans (خططي)', Icons.edit, '''المطلوب (ص 73):
+• اكتب فقرة (paragraph) عن خططك للمستقبل. ابدأ بجملة رئيسة، ثم أسباب، ثم خاتمة. استعمل I'm going to (للخطة) وwill (للتوقعات).
+
+نموذج (Model):
+\u202AMy plans for the future\u202C
+\u202AI'm going to study Medicine at university because I want to become a doctor.\u202C
+\u202AFirst, I'm going to work hard at school and get good marks in Science and English. Second, I'm going to apply to the College of Medicine in Baghdad.\u202C
+\u202AAfter I graduate, I will work in a hospital in my town. I think I will be busy, but I will be happy because I will help sick people.\u202C
+\u202AMy dream is to open a small clinic for children one day.\u202C
+
+الترجمة:
+خططي للمستقبل: سأدرس الطب في الجامعة لأنني أريد أن أصبح طبيباً. أولاً سأجتهد في المدرسة وأحصل على درجات جيدة بالعلوم والإنكليزية. ثانياً سأقدم على كلية الطب في بغداد. بعد التخرج سأعمل في مستشفى في بلدتي. أظن أنني سأكون مشغولاً لكنني سأكون سعيداً لأنني سأساعد المرضى. حلمي أن أفتح عيادة صغيرة للأطفال يوماً ما.
+
+قواعد: I'm going to + infinitive (خطة) / I will + infinitive (توقع) / because (لأن) / First, Second, After that.'''),
+    Section('The school of the future (مدرسة المستقبل)', Icons.edit, '''المطلوب (الدرس 4، ص 68):
+• Hassan شارك في مسابقة لتصميم مدرسة المستقبل بفقرات بعناوين: A super school, Virtual learning, Global education. اكتب أنت فقرة عن مدرسة المستقبل باستعمال will.
+
+نموذج (Model):
+\u202AThe school of the future\u202C
+\u202AI think schools in the future will be very different from schools now.\u202C
+\u202AThere will be more technology. Students will study at home on their computers and come to school only once or twice a week.\u202C
+\u202AThere will be one big school in each town with a sports hall, a science park and a library. Students will be able to learn music and art in special buildings.\u202C
+\u202AStudents will also be able to connect with teachers and students all over the world, so they will learn many different subjects.\u202C
+
+الترجمة:
+مدرسة المستقبل: أظن أن مدارس المستقبل ستختلف كثيراً عن مدارس اليوم. ستكون هناك تكنولوجيا أكثر، وسيدرس الطلاب في البيت على حواسيبهم ولا يأتون للمدرسة إلا مرة أو مرتين في الأسبوع. وستكون هناك مدرسة كبيرة واحدة في كل مدينة فيها قاعة رياضة وحديقة علوم ومكتبة، وسيتمكن الطلاب من تعلم الموسيقى والفن في مبانٍ خاصة. وسيتواصلون مع معلمين وطلاب من أنحاء العالم فيتعلمون مواد كثيرة مختلفة.
+
+قواعد: will + infinitive / will be able to + infinitive / There will be ... / fewer + جمع / more + اسم.'''),
+    Section('Writing about a person\'s career (مسيرة مهنية)', Icons.edit, '''المطلوب (الدرس 8، ص 72 وص 73):
+• اقرأ ملاحظات Faisal عن مقابلة Bob Pearson (معلم إنكليزي)، ثم اكتب فقرة عن مسيرته المهنية: الوظيفة، المكان، التاريخ المهني، المزايا والعيوب، والخطط.
+
+نموذج (Model) — من الملاحظات:
+\u202ABob Pearson is a British English teacher who works in Iraq. He works at a training centre for Iraq Petroleum, where he teaches English to trainees who are studying to be technicians and fire officers.\u202C
+\u202AAfter school, he studied English at the University of London for three years. Then he did a teacher-training course for one year. He taught English to children in Italy and then to adults in Turkey.\u202C
+\u202AHe enjoys working with young people. He thinks Iraq is a great place because he can visit historical sites, and the people are very friendly. The only disadvantage is that it is sometimes too hot.\u202C
+\u202AIn the future, he is going to go back to university to study for a higher degree. He may also move to another country.\u202C
+
+الترجمة:
+بوب بيرسون معلم إنكليزي بريطاني يعمل في العراق. يعمل في مركز تدريب لشركة نفط العراق ويدرّس الإنكليزية لمتدربين يدرسون ليصبحوا فنيين ورجال إطفاء. بعد المدرسة درس الإنكليزية في جامعة لندن ثلاث سنوات، ثم دورة إعداد معلمين لسنة، وعلّم الأطفال في إيطاليا ثم الكبار في تركيا. يحب العمل مع الشباب، ويرى العراق مكاناً رائعاً لزيارة المواقع التاريخية والناس ودودون. العيب الوحيد أنه حار أحياناً. وفي المستقبل سيعود إلى الجامعة لدرجة أعلى وربما ينتقل إلى بلد آخر.
+
+أسئلة اكتبها لبوب (ثلاثة): What is the best part of your job? / How long have you lived in Iraq? / Why did you become a teacher?'''),
+  ]),
+  Chapter('Unit 7: Other countries (دول أخرى)', [
+    Section('Two paragraphs about a country (بلد)', Icons.edit, '''المطلوب (ص 82–85):
+• ابحث عن بلد واكتب عنه فقرتين: الأولى (الموقع والمعلومات العامة)، والثانية (الزراعة والمنتجات والأماكن المهمة). الكتاب قدّم ليبيا والسودان كنموذج (مساحة، سكان، عملة، لغة).
+
+نموذج (Model) — Iraq:
+\u202AIraq is a large country in the south-west of Asia. The capital is Baghdad, and most of the population live in and around the big cities. The area is about 435,000 square kilometres and about 39 million people live there. The currency is the Iraqi dinar and the language is Arabic. The climate is hot and dry in summer and mild in winter.\u202C
+\u202AIraq is famous for the two rivers, the Tigris and the Euphrates. Wheat, barley, rice and dates are grown in the fertile land between the rivers. However, Iraq's main product is oil, which is exported to many countries. There are also magnificent ancient places to visit, such as Babylon and Ur.\u202C
+
+الترجمة:
+العراق بلد كبير في جنوب غرب آسيا، عاصمته بغداد ومعظم سكانه يعيشون في المدن الكبرى وحولها. مساحته نحو 435 ألف كيلومتر مربع ويسكنه نحو 39 مليون نسمة، وعملته الدينار العراقي ولغته العربية، ومناخه حار جاف صيفاً ومعتدل شتاءً. اشتهر بنهرين هما دجلة والفرات، ويُزرع القمح والشعير والرز والتمر في الأرض الخصبة بينهما، لكن منتجه الرئيس النفط الذي يُصدَّر إلى بلدان كثيرة. وفيه أماكن أثرية رائعة مثل بابل وأور.
+
+بطاقة معلومات (Fact box): Area / Population / Currency / Language.
+قواعد: passive (are grown, is exported) / such as / However (ومع ذلك).'''),
+    Section('Summary: Together for a better school', Icons.edit, '''المطلوب (ص 85):
+• استمع إلى قصة أو اقرأها ودوّن التفاصيل، ثم اكتب ملخصاً (summary) بجمل رئيسة وبالماضي البسيط وبترتيب الأحداث.
+
+نموذج (Model):
+\u202AI read a story called "Together for a better school". It is about a boy called Ammar.\u202C
+\u202AIn the summer holidays, Ammar saw that the school grounds were in a mess. There were long weeds, stones and rubbish. He cleaned the grounds alone for one day, but the job was too big for one person.\u202C
+\u202AThen he asked his friend Fahad for help, and some other friends joined them. They brought tools, a lawn mower and young plants. By the evening, the school grounds were clean and beautiful.\u202C
+\u202AThe teachers and parents gave the students certificates and made them Environment Ambassadors.\u202C
+\u202AI think this story is excellent because it shows that teamwork can do great things.\u202C
+
+الترجمة:
+قرأت قصة اسمها معاً من أجل مدرسة أفضل، عن ولد اسمه عمار. في العطلة الصيفية رأى عمار ساحة مدرسته في فوضى: أعشاب طويلة وحجارة ونفايات. نظفها وحده يوماً لكن العمل أكبر من شخص واحد. فطلب مساعدة صديقه فهد وانضم إليهما أصدقاء آخرون. أحضروا أدوات وجزّازة وشتلات، وفي المساء صارت الساحة نظيفة وجميلة. أعطى المعلمون والأهالي الطلاب شهادات وجعلوهم سفراء البيئة. أظن أن القصة رائعة لأنها تُظهر أن العمل الجماعي يحقق أشياء عظيمة.
+
+تعابير مفيدة: It is about ... / In the summer holidays, ... / Then ... / By the evening, ... / I think this story is excellent because ...'''),
+    Section('Project 4: a play script (سيناريو مسرحية)', Icons.edit, '''المطلوب (Project 4، ص 88–89):
+• اختر قصة (حكاية شعبية أو قصة من الكتاب)، واكتب لها سيناريو (script) بأدوار: الراوي (Narrator) والشخصيات، ثم أدّها بطريقة: تمثيل (Drama)، أو تمثيل الظلال (Shadow acting)، أو دمى العصي (Stick puppets)، أو الراوي مع الرسم (Narrate and draw).
+• الكتاب قدّم حكاية Rainbow Bird (طائر قوس قزح) الأسترالية وكيف سرق النار من التمساح.
+
+نموذج (Model) — The Thirsty Crow:
+\u202ANarrator: One hot day, a crow was very thirsty. He looked everywhere for water.\u202C
+\u202ACrow: I'm so thirsty! Where can I find some water?\u202C
+\u202ANarrator: At last, he saw a jug. There was a little water at the bottom.\u202C
+\u202ACrow: Oh no! My beak is too short. I can't reach the water!\u202C
+\u202ANarrator: The crow thought hard. Then he had an idea.\u202C
+\u202ACrow: I know! I'll drop some stones into the jug.\u202C
+\u202ANarrator: He dropped one stone after another. Slowly, the water rose to the top.\u202C
+\u202ACrow: Hooray! Now I can drink!\u202C
+\u202ANarrator: The crow drank the water and flew away happily. A clever idea can solve a hard problem.\u202C
+
+الترجمة:
+الراوي: في يوم حار كان غراب عطشان جداً... الغراب: أنا عطشان! أين أجد ماء؟ الراوي: أخيراً رأى إبريقاً فيه قليل من الماء في القاع. الغراب: يا للأسف! منقاري قصير ولا أصل للماء! الراوي: فكّر الغراب جيداً ثم خطرت له فكرة. الغراب: عرفت! سأُسقط حجارة في الإبريق. الراوي: أسقط حجراً بعد حجر فارتفع الماء ببطء إلى الأعلى. الغراب: هيه! يمكنني الشرب الآن! الراوي: شرب الغراب وطار سعيداً. فكرة ذكية تحل مشكلة صعبة.
+
+خطوات المشروع: Choose a story → Decide the method → Write a script → Make the props (masks, puppets) → Practise → Perform.'''),
+  ]),
+  Chapter('Unit 8: Review (مراجعة)', [
+    Section('Editing your work (تصحيح النص)', Icons.edit, '''المطلوب (الدرس 4: Writing، ص 93):
+• Writing tip 5: بعد أن تكتب راجع نصك دائماً. درس الأخطاء الحمراء في النص، صححها واستعمل المفتاح لتحدد نوع الخطأ، ثم فكّر بترتيب الفقرات.
+
+مفتاح الأخطاء (Key):
+• gr = grammar (قواعد)
+• p = punctuation (ترقيم)
+• wo = word order (ترتيب الكلمات)
+• sp = spelling (إملاء)
+• ww = wrong word (كلمة خاطئة)
+• ^ = word missing (كلمة ناقصة)
+• ~ = join (اربط الجملتين)
+
+النص بعد التصحيح (Corrected text) — Falcons:
+\u202AMore than a thousand years ago, the people from the deserts of Arabia, the Bedouin, used to watch falcons catching birds and animals for food. The Bedouin lived mostly on dates, milk and bread because it was difficult to catch animals and birds. Then they learnt how to catch falcons. Soon, the Bedouin were eating meat that the falcons caught for them. Their favourite bird was the large, long-legged houbara. They cooked it over a fire and it tasted delicious.\u202C
+\u202ADid you ever watch a falcon diving down from the sky? They are the fastest things in the natural world. They fly high up and then dive down to kill a bird or a small animal. Some falcons can dive at 240 kph!\u202C
+\u202AOne disadvantage of this sport is that too many rare birds might be killed. If nothing was done about this, there would soon be no rare birds left. However, the government has set up protected areas for birds. People cannot hunt there. These safe areas for birds are also good habitats for other animals. As a result, wildlife numbers have gone up.\u202C
+
+أنواع الأخطاء التي صُححت:
+• More than thousand years → More than a thousand years (^ كلمة ناقصة a)
+• catching for food birds and animals → catching birds and animals for food (wo ترتيب)
+• Then they have learnt → Then they learnt (gr الماضي البسيط)
+• Did you ever vatcht a Falcon → Did you ever watch a falcon (sp إملاء + حرف كبير خطأ)
+\u202A• from sky → from the sky (^ the)\u202C
+• the fast things → the fastest things (gr أعلى درجة)
+\u202A• goverment → government (sp)\u202C
+\u202A• habetats → habitats (sp)\u202C
+\u202A• wildlife numbers went up → have gone up (gr)\u202C
+
+خطوات التحرير: 1) اقرأ النص مرة لتفهم المعنى. 2) راجع القواعد والزمن. 3) راجع الإملاء وعلامات الترقيم. 4) راجع ترتيب الكلمات والفقرات. 5) أعد كتابة النص نظيفاً.'''),
+  ]),
+];
+
+const Map<int, List<Figure>> englishWritingFigures = {
+  0: [
+    Figure('engw_p11', 'صفحة 11: رسالتا Dina وZaid (وصف صديق)'),
+    Figure('engw_p12', 'صفحة 12: كتابة إعلان (Writing an advert)'),
+    Figure('engw_p17', 'صفحة 17: Project 1 تصميم مجمع جديد'),
+  ],
+  1: [
+    Figure('engw_p25', 'صفحة 25: رسائل الدعوة والإعلانات'),
+    Figure('engw_p26', 'صفحة 26: ملف معلومات الفيلم (Fact file)'),
+  ],
+  2: [
+    Figure('engw_p36', 'صفحة 36: الاستبيان (Questionnaire)'),
+    Figure('engw_p38', 'صفحة 38: ملف معلومات الحياة على الأهوار'),
+    Figure('engw_p43', 'صفحة 43: Project 2 مغذّيات الطيور'),
+  ],
+  3: [
+    Figure('engw_p49', 'صفحة 49: نصائح كتابة الملخص (Writing tips)'),
+  ],
+  4: [
+    Figure('engw_p58', 'صفحة 58: استبيان المجلة وجدول العدّ'),
+    Figure('engw_p60', 'صفحة 60: قصة التقرير الصحفي (Al Sabah)'),
+    Figure('engw_p63', 'صفحة 63: Project 3 شخص يصنع الفرق'),
+  ],
+  5: [
+    Figure('engw_p67', 'صفحة 67: مدونة Mona (النصيحة)'),
+    Figure('engw_p68', 'صفحة 68: مدرسة المستقبل (Hassan)'),
+    Figure('engw_p72', 'صفحة 72: مقابلة Bob Pearson'),
+  ],
+  6: [
+    Figure('engw_p84', 'صفحة 84: ليبيا والسودان (معلومات بلد)'),
+    Figure('engw_p89', 'صفحة 89: Project 4 طرق عرض القصة'),
+  ],
+  7: [
+    Figure('engw_p93', 'صفحة 93: تحرير الكتابة (Editing)'),
+  ],
+};
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -5923,6 +6367,7 @@ class HomePage extends StatelessWidget {
     'الإسلامية',
     'اللغة العربية',
     'اللغة الإنكليزية',
+    'الإنشاء الإنكليزي',
     'الرياضيات',
     'الأحياء',
     'الكيمياء',
@@ -5962,6 +6407,14 @@ class HomePage extends StatelessWidget {
                   Widget page;
                   if (subject == 'الكيمياء') {
                     page = const ChemistryPage();
+                  } else if (subject == 'الإنشاء الإنكليزي') {
+                    page = const ChaptersPage(
+                      title: 'الإنشاء الإنكليزي',
+                      subtitle: 'كل مواضيع الكتابة في الكتاب مع نماذج وترجمة وصور الصفحات',
+                      icon: Icons.edit_note,
+                      chapters: englishWriting,
+                      figures: englishWritingFigures,
+                    );
                   } else if (subject == 'اللغة الإنكليزية') {
                     page = const ChaptersPage(
                       title: 'اللغة الإنكليزية',
